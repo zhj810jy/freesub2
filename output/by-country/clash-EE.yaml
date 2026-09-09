@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - xiaohe
+- name: 🇪🇪 EE 01 - hx
   type: vless
   server: 94.183.170.135
   port: 443
@@ -17,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 02 - xiaohe
+- name: 🇪🇪 EE 02 - hx
   type: vless
   server: 94.183.170.135
   port: 443
@@ -30,20 +30,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 04 - xiaohe
+- name: 🇪🇪 EE 03 - hx
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -57,18 +44,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
-  - 🇪🇪 EE 04 - xiaohe
+  - 🇪🇪 EE 01 - hx
+  - 🇪🇪 EE 02 - hx
+  - 🇪🇪 EE 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
-  - 🇪🇪 EE 04 - xiaohe
+  - 🇪🇪 EE 01 - hx
+  - 🇪🇪 EE 02 - hx
+  - 🇪🇪 EE 03 - hx
 rules:
 - MATCH,PROXIES
