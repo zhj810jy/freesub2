@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - hx
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -15,6 +15,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 02 - hx
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 03 - hx
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -24,22 +31,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - hx
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🇸🇬 新加坡 (Singapore) 04 - hx
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -49,7 +43,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 05 - hx
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -77,7 +71,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 08 - hx
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -87,7 +81,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 09 - hx
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -96,24 +90,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 10 - hx
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - hx
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 12 - hx
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -126,7 +102,90 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 11 - hx
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - hx
+  type: vless
+  server: 104.17.74.206
+  port: 8443
+  uuid: 542fd687-5160-4f80-9223-56678567dd29
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8.sahanwickramasinghe.me
 - name: 🇸🇬 新加坡 (Singapore) 13 - hx
+  type: vless
+  server: 104.17.71.206
+  port: 8443
+  uuid: 542fd687-5160-4f80-9223-56678567dd29
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 14 - hx
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - hx
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 16 - hx
+  type: ss
+  server: 168.107.91.1
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Ep1fuyrFAxEF87qg9q17V4YEGtS92m0xdJbwu6lwTF4=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - hx
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - hx
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 19 - hx
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -136,9 +195,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - hx
+- name: 🇸🇬 新加坡 (Singapore) 20 - hx
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -146,6 +205,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - hx
+  type: ss
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -165,6 +231,13 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 12 - hx
   - 🇸🇬 新加坡 (Singapore) 13 - hx
   - 🇸🇬 新加坡 (Singapore) 14 - hx
+  - 🇸🇬 新加坡 (Singapore) 15 - hx
+  - 🇸🇬 新加坡 (Singapore) 16 - hx
+  - 🇸🇬 新加坡 (Singapore) 17 - hx
+  - 🇸🇬 新加坡 (Singapore) 18 - hx
+  - 🇸🇬 新加坡 (Singapore) 19 - hx
+  - 🇸🇬 新加坡 (Singapore) 20 - hx
+  - 🇸🇬 新加坡 (Singapore) 21 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -184,5 +257,12 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 12 - hx
   - 🇸🇬 新加坡 (Singapore) 13 - hx
   - 🇸🇬 新加坡 (Singapore) 14 - hx
+  - 🇸🇬 新加坡 (Singapore) 15 - hx
+  - 🇸🇬 新加坡 (Singapore) 16 - hx
+  - 🇸🇬 新加坡 (Singapore) 17 - hx
+  - 🇸🇬 新加坡 (Singapore) 18 - hx
+  - 🇸🇬 新加坡 (Singapore) 19 - hx
+  - 🇸🇬 新加坡 (Singapore) 20 - hx
+  - 🇸🇬 新加坡 (Singapore) 21 - hx
 rules:
 - MATCH,PROXIES
