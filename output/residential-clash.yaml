@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - hx
   type: vless
-  server: 104.21.33.59
-  port: 443
+  server: 172.64.145.202
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
@@ -15,10 +15,45 @@ proxies:
   servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - hx
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - hx
+  type: ss
+  server: 36.224.152.189
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - hx
+  type: vless
+  server: 172.64.149.209
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - hx
+  type: vless
+  server: 104.19.215.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - hx
   type: vless
   server: 104.18.38.47
   port: 2087
@@ -32,9 +67,9 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - hx
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - hx
   type: vless
-  server: 172.64.145.202
+  server: 172.64.53.87
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -46,11 +81,44 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - hx
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - hx
   type: vless
-  server: 9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com
+  server: 118.167.200.67
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - hx
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - hx
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - hx
+  type: vless
+  server: 0cd6e0e6-tlheo0-tphvvu-gacy.hk3.hyhuawei.com
   port: 443
-  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -58,35 +126,7 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - hx
-  type: vless
-  server: 172.64.145.93
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - hx
-  type: vless
-  server: 104.18.40.152
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - hx
+- name: 🇰🇷 韩国 (South Korea) 11 (家宽) - hx
   type: vless
   server: 104.16.151.21
   port: 2087
@@ -100,40 +140,7 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - hx
-  type: ss
-  server: 36.224.152.189
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - hx
-  type: vless
-  server: 118.167.200.67
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: ios
-- name: 🇰🇷 韩国 (South Korea) 10 (家宽) - hx
-  type: vless
-  server: 104.16.150.246
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - hx
+- name: 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - hx
   type: vless
   server: 60.248.219.53
   port: 443
@@ -153,31 +160,33 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - hx
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - hx
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - hx
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - hx
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - hx
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - hx
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - hx
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - hx
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - hx
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - hx
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - hx
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - hx
   - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - hx
-  - 🇰🇷 韩国 (South Korea) 10 (家宽) - hx
-  - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - hx
+  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - hx
+  - 🇰🇷 韩国 (South Korea) 11 (家宽) - hx
+  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - hx
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - hx
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - hx
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - hx
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - hx
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - hx
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - hx
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - hx
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - hx
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - hx
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - hx
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - hx
   - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - hx
-  - 🇰🇷 韩国 (South Korea) 10 (家宽) - hx
-  - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - hx
+  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - hx
+  - 🇰🇷 韩国 (South Korea) 11 (家宽) - hx
+  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - hx
 rules:
 - MATCH,PROXIES
