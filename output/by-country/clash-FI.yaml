@@ -20,59 +20,18 @@ proxies:
       Host: c12.com
 - name: 🇫🇮 FI 02 - hx
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  server: 65.109.185.234
+  port: 8080
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - hx
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: c12.com
-- name: 🇫🇮 FI 04 - hx
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 05 - hx
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - hx
+      Host: italic.dearhossein-taktaz.ir
+- name: 🇫🇮 FI 03 - hx
   type: vless
   server: 151.101.56.6
   port: 443
@@ -86,33 +45,18 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 07 - hx
+- name: 🇫🇮 FI 04 - hx
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 08 - hx
-  type: vless
-  server: 65.109.185.234
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: italic.dearhossein-taktaz.ir
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,10 +66,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - hx
   - 🇫🇮 FI 03 - hx
   - 🇫🇮 FI 04 - hx
-  - 🇫🇮 FI 05 - hx
-  - 🇫🇮 FI 06 - hx
-  - 🇫🇮 FI 07 - hx
-  - 🇫🇮 FI 08 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -135,9 +75,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - hx
   - 🇫🇮 FI 03 - hx
   - 🇫🇮 FI 04 - hx
-  - 🇫🇮 FI 05 - hx
-  - 🇫🇮 FI 06 - hx
-  - 🇫🇮 FI 07 - hx
-  - 🇫🇮 FI 08 - hx
 rules:
 - MATCH,PROXIES

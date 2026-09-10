@@ -6,43 +6,31 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - hx
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime36.workers.dev
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 02 - hx
   type: vless
   server: 192.145.31.5
-  port: 443
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 03 - hx
   type: vless
   server: 192.145.31.5
-  port: 443
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 04 - hx
   type: vless
   server: 192.145.31.5
@@ -73,17 +61,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 07 - hx
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
   servername: 192.145.31.5
-- name: 🇧🇬 BG 08 - hx
+- name: 🇧🇬 BG 07 - hx
   type: vless
   server: 192.145.31.5
   port: 443
@@ -96,6 +75,19 @@ proxies:
     path: /
     headers:
       Host: 192.145.31.5
+- name: 🇧🇬 BG 08 - hx
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 BG 09 - hx
   type: vless
   server: 192.145.31.5
@@ -104,7 +96,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  servername: 192.145.31.5
 - name: 🇧🇬 BG 10 - hx
   type: vless
   server: 192.145.31.5
@@ -113,7 +105,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 192.145.31.5
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
