@@ -6,6 +6,138 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hx
   type: vmess
+  server: 47.83.19.148
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
+  type: vless
+  server: 220.246.184.228
+  port: 443
+  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
+  type: vless
+  server: 0cd6e0e6-tlheo0-tphvvu-gacy.hk3.hyhuawei.com
+  port: 443
+  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
+  type: vless
+  server: 186b6f53-tla000-tvb36r-1qwom.hk3.hyhuawei.com
+  port: 443
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
+  type: vless
+  server: 220.246.184.228
+  port: 443
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
+  type: vless
+  server: 220.246.184.228
+  port: 443
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
+  type: vless
+  server: 9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com
+  port: 443
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - hx
+  type: vless
+  server: 220.246.184.228
+  port: 443
+  uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - hx
+  type: vmess
+  server: ce0gedpxwou6cqon.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ce0gedpxwou6cqon.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ce0gedpxwou6cqon.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - hx
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - hx
+  type: vmess
   server: 156.245.232.239
   port: 35043
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
@@ -19,67 +151,7 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
-  type: vmess
-  server: ejomsxptp19apygl.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ejomsxptp19apygl.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ejomsxptp19apygl.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
-  type: vless
-  server: 9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com
-  port: 443
-  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - hx
   type: vmess
   server: 47.83.19.148
   port: 443
@@ -95,9 +167,9 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - hx
   type: vmess
-  server: u2frxj0g13vdi0wo.v.3dns.vip
+  server: 47.86.107.119
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -105,12 +177,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ''
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,6 +195,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - hx
   - 🇭🇰 中国香港 (Hong Kong) 06 - hx
   - 🇭🇰 中国香港 (Hong Kong) 07 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 08 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 09 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 10 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 11 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 12 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 13 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -135,5 +213,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - hx
   - 🇭🇰 中国香港 (Hong Kong) 06 - hx
   - 🇭🇰 中国香港 (Hong Kong) 07 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 08 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 09 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 10 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 11 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 12 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 13 - hx
 rules:
 - MATCH,PROXIES
