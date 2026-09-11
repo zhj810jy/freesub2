@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - hx",
-        "🇸🇪 SE 02 - hx"
+        "🇮🇪 IE 01 - hx",
+        "🇮🇪 IE 02 - hx",
+        "🇮🇪 IE 03 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - hx",
-        "🇸🇪 SE 02 - hx"
+        "🇮🇪 IE 01 - hx",
+        "🇮🇪 IE 02 - hx",
+        "🇮🇪 IE 03 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

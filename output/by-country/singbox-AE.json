@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - hx"
+        "🇦🇪 阿联酋 (UAE) 01 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - hx"
+        "🇦🇪 阿联酋 (UAE) 01 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
