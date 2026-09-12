@@ -4,45 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 UZ 01 - hx
+- name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 189.74.97.47
-  port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  server: 104.18.47.113
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /755276b33b6f
+    path: /?ed=2560security=tls
     headers:
-      Host: 189.74.97.47
-- name: 🇺🇿 UZ 02 - hx
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 02 - hx
   type: vless
-  server: 189.74.97.47
-  port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /755276b33b6f
+    path: /
     headers:
-      Host: 189.74.97.47
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 UZ 01 - hx
-  - 🇺🇿 UZ 02 - hx
+  - 🇨🇿 CZ 01 - hx
+  - 🇨🇿 CZ 02 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 UZ 01 - hx
-  - 🇺🇿 UZ 02 - hx
+  - 🇨🇿 CZ 01 - hx
+  - 🇨🇿 CZ 02 - hx
 rules:
 - MATCH,PROXIES
