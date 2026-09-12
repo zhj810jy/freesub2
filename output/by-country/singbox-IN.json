@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - hx"
+        "🇮🇳 印度 (India) 01 - hx",
+        "🇮🇳 印度 (India) 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - hx"
+        "🇮🇳 印度 (India) 01 - hx",
+        "🇮🇳 印度 (India) 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
