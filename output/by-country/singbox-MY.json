@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇲🇾 MY 01 - hx",
-        "🇲🇾 MY 02 - hx"
+        "🇲🇾 MY 02 - hx",
+        "🇲🇾 MY 03 - hx",
+        "🇲🇾 MY 04 - hx"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇾 MY 01 - hx",
-        "🇲🇾 MY 02 - hx"
+        "🇲🇾 MY 02 - hx",
+        "🇲🇾 MY 03 - hx",
+        "🇲🇾 MY 04 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

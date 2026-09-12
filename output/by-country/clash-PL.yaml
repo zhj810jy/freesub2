@@ -13,24 +13,30 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - hx
   type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /4bc027a44532
     headers:
-      Host: pl2.lckdwn.ru
+      Host: 178.95.170.83
 - name: 🇵🇱 PL 03 - hx
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: telegram-leviko_v2ray
 - name: 🇵🇱 PL 04 - hx
   type: vless
   server: 94.183.209.58
@@ -45,6 +51,19 @@ proxies:
     headers:
       Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 05 - hx
+  type: vless
+  server: 178.95.170.115
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: telegram-leviko_v2ray
+- name: 🇵🇱 PL 06 - hx
   type: vless
   server: 94.183.209.59
   port: 443
@@ -67,6 +86,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - hx
   - 🇵🇱 PL 04 - hx
   - 🇵🇱 PL 05 - hx
+  - 🇵🇱 PL 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +97,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - hx
   - 🇵🇱 PL 04 - hx
   - 🇵🇱 PL 05 - hx
+  - 🇵🇱 PL 06 - hx
 rules:
 - MATCH,PROXIES

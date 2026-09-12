@@ -6,86 +6,7 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hx
   type: vmess
-  server: 20.235.220.189
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
-  type: vmess
-  server: 8.218.184.4
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  type: vmess
-  server: mtckundigepwu3up.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mtckundigepwu3up.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: mtckundigepwu3up.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
-  type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 47.86.107.119
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -99,9 +20,9 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
   type: vmess
-  server: m01c7b2z26dtqgee.v.3dns.vip
+  server: ce0gedpxwou6cqon.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -109,31 +30,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: M01c7B2z26DtQGEe.v.3dns.vip
+  servername: ce0gedpxwou6cqon.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: M01c7B2z26DtQGEe.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - hx
+      Host: ce0gedpxwou6cqon.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
   type: vmess
-  server: 47.83.19.148
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - hx
-  type: vmess
-  server: 47.243.80.106
+  server: 47.243.92.155
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -141,12 +46,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wwafj5LHl6bI8aU9.v.3dns.vip
+  servername: mTCKUNDiGePwU3uP.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: wwafj5LHl6bI8aU9.v.3dns.vip
+      Host: mTCKUNDiGePwU3uP.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,11 +77,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - hx
   - 🇭🇰 中国香港 (Hong Kong) 03 - hx
   - 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 06 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 07 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 08 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 09 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -170,10 +86,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - hx
   - 🇭🇰 中国香港 (Hong Kong) 03 - hx
   - 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 06 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 07 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 08 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 09 - hx
 rules:
 - MATCH,PROXIES

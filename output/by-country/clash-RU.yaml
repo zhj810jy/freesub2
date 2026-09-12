@@ -12,19 +12,18 @@ proxies:
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
-  type: ss
-  server: 138.124.68.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
+  type: vless
+  server: 104.18.47.113
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
-  type: ss
-  server: 138.124.68.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
-  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
-  - 🇷🇺 俄罗斯 (Russia) 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
-  - 🇷🇺 俄罗斯 (Russia) 03 - hx
 rules:
 - MATCH,PROXIES
