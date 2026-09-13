@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - hx"
+        "🇨🇭 CH 01 - hx",
+        "🇨🇭 CH 02 - hx",
+        "🇨🇭 CH 03 - hx",
+        "🇨🇭 CH 04 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - hx"
+        "🇨🇭 CH 01 - hx",
+        "🇨🇭 CH 02 - hx",
+        "🇨🇭 CH 03 - hx",
+        "🇨🇭 CH 04 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

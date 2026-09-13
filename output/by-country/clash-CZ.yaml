@@ -6,30 +6,31 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 104.18.47.113
-  port: 80
+  server: 172.64.229.2
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560security=tls+
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇨🇿 CZ 02 - hx
   type: vless
-  server: 108.162.198.178
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.8.63
+  port: 443
+  uuid: b19419fa-8009-455b-b059-765e2856883a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: akbarian34.j9z65ce2uyks.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: akbarian34.j9z65ce2uyks.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
