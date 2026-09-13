@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 172.64.229.2
+  server: 103.119.18.30
+  port: 443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /proxyip=154.3.33.43
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 🇨🇿 CZ 02 - hx
+  type: vless
+  server: 172.64.32.108
   port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -17,20 +31,20 @@ proxies:
     path: /?ed=2560security=tls+
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 02 - hx
+- name: 🇨🇿 CZ 03 - hx
   type: vless
-  server: 104.21.8.63
+  server: 103.119.18.30
   port: 443
-  uuid: b19419fa-8009-455b-b059-765e2856883a
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: akbarian34.j9z65ce2uyks.workers.dev
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560
+    path: /proxyip=154.3.33.43
     headers:
-      Host: akbarian34.j9z65ce2uyks.workers.dev
+      Host: mianfei-73q.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - hx
   - 🇨🇿 CZ 02 - hx
+  - 🇨🇿 CZ 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - hx
   - 🇨🇿 CZ 02 - hx
+  - 🇨🇿 CZ 03 - hx
 rules:
 - MATCH,PROXIES
