@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - hx
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,17 +19,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - hx
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: uae.unixzone.us
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - hx
   type: vless
   server: uae.unixzone.us
@@ -43,6 +43,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - hx
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 63a1d550-f8da-456e-813c-398dd819e405
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: noisy-cherry-b46b.206-866.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - hx
   - 🇦🇪 阿联酋 (UAE) 02 - hx
   - 🇦🇪 阿联酋 (UAE) 03 - hx
+  - 🇦🇪 阿联酋 (UAE) 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - hx
   - 🇦🇪 阿联酋 (UAE) 02 - hx
   - 🇦🇪 阿联酋 (UAE) 03 - hx
+  - 🇦🇪 阿联酋 (UAE) 04 - hx
 rules:
 - MATCH,PROXIES
