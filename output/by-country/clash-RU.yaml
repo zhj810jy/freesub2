@@ -12,6 +12,27 @@ proxies:
   password: 6b39ae3234dfd68b
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
   type: vless
   server: 78.159.247.246
   port: 443
@@ -32,6 +53,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
+  - 🇷🇺 俄罗斯 (Russia) 03 - hx
+  - 🇷🇺 俄罗斯 (Russia) 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +62,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
+  - 🇷🇺 俄罗斯 (Russia) 03 - hx
+  - 🇷🇺 俄罗斯 (Russia) 04 - hx
 rules:
 - MATCH,PROXIES
