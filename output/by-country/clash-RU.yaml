@@ -5,12 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
-  type: ss
-  server: 46.17.42.166
-  port: 50111
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+  type: vmess
+  server: renderer-stream-2-62.mirra.now
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: ''
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
   type: ss
   server: 130.49.189.158
@@ -33,6 +42,13 @@ proxies:
     headers:
       Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 04 - hx
+  type: ss
+  server: 46.17.42.166
+  port: 50111
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - hx
   type: vless
   server: 78.159.247.246
   port: 443
@@ -55,6 +71,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
   - 🇷🇺 俄罗斯 (Russia) 03 - hx
   - 🇷🇺 俄罗斯 (Russia) 04 - hx
+  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +81,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
   - 🇷🇺 俄罗斯 (Russia) 03 - hx
   - 🇷🇺 俄罗斯 (Russia) 04 - hx
+  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 rules:
 - MATCH,PROXIES
