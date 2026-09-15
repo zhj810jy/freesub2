@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - hx
   type: vless
-  server: 91.209.253.119
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - hx
   type: vless
-  server: 91.209.253.243
+  server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 03 - hx
   type: vless
-  server: 91.209.253.68
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
