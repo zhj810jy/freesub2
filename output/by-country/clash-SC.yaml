@@ -6,61 +6,28 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - hx
   type: vless
-  server: 104.21.238.93
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
+  server: 172.64.229.2
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    path: /?ed=2560security=tls
     headers:
-      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
-- name: 🇸🇨 SC 02 - hx
-  type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇸🇨 SC 03 - hx
-  type: vless
-  server: 172.67.152.162
-  port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
-  network: ws
-  ws-opts:
-    path: /cmh
-    headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - hx
-  - 🇸🇨 SC 02 - hx
-  - 🇸🇨 SC 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - hx
-  - 🇸🇨 SC 02 - hx
-  - 🇸🇨 SC 03 - hx
 rules:
 - MATCH,PROXIES
