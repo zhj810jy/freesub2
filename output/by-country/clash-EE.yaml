@@ -7,6 +7,15 @@ proxies:
 - name: 🇪🇪 EE 01 - hx
   type: vless
   server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 02 - hx
+  type: vless
+  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -17,7 +26,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 02 - hx
+- name: 🇪🇪 EE 03 - hx
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -26,6 +35,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 04 - hx
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 05 - hx
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +64,9 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - hx
   - 🇪🇪 EE 02 - hx
+  - 🇪🇪 EE 03 - hx
+  - 🇪🇪 EE 04 - hx
+  - 🇪🇪 EE 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +74,8 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - hx
   - 🇪🇪 EE 02 - hx
+  - 🇪🇪 EE 03 - hx
+  - 🇪🇪 EE 04 - hx
+  - 🇪🇪 EE 05 - hx
 rules:
 - MATCH,PROXIES

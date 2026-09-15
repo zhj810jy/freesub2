@@ -33,19 +33,31 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 03 - hx
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 04 - hx
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws
+    path: /d46bf492
     headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 04 - hx
+      Host: ''
+- name: 🇹🇭 TH 05 - hx
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -69,6 +81,7 @@ proxy-groups:
   - 🇹🇭 TH 02 - hx
   - 🇹🇭 TH 03 - hx
   - 🇹🇭 TH 04 - hx
+  - 🇹🇭 TH 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +91,6 @@ proxy-groups:
   - 🇹🇭 TH 02 - hx
   - 🇹🇭 TH 03 - hx
   - 🇹🇭 TH 04 - hx
+  - 🇹🇭 TH 05 - hx
 rules:
 - MATCH,PROXIES
