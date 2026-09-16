@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇭 CH 01 - hx",
+        "🇨🇭 CH 02 - hx",
+        "🇨🇭 CH 03 - hx",
+        "🇨🇭 CH 04 - hx",
+        "🇨🇭 CH 05 - hx",
+        "🇨🇭 CH 06 - hx"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇭 CH 01 - hx",
+        "🇨🇭 CH 02 - hx",
+        "🇨🇭 CH 03 - hx",
+        "🇨🇭 CH 04 - hx",
+        "🇨🇭 CH 05 - hx",
+        "🇨🇭 CH 06 - hx"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
