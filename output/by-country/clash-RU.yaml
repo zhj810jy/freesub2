@@ -5,34 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
-  type: ss
-  server: 195.133.5.102
-  port: 9011
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
-  type: ss
-  server: 194.87.196.13
-  port: 9011
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
-  type: ss
-  server: 195.58.48.137
-  port: 9019
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
+  type: vless
+  server: 104.21.87.238
+  port: 8080
+  uuid: 8f53fce2-6c17-4e37-9ae9-d969fd85117c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vl/Wp4FqWLcoYNYXCovu4?ed=2560
+    headers:
+      Host: ApI-hub-C9A393.ALiMiRZAi539-484.WOrKerS.DeV
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
+  type: ss
+  server: 195.133.5.102
+  port: 9011
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - hx
+  type: ss
+  server: 194.87.196.13
+  port: 9011
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - hx
   type: vless
   server: 46.8.200.91
   port: 443
@@ -46,6 +65,13 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 07 - hx
+  type: ss
+  server: 195.58.48.137
+  port: 9019
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +82,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hx
   - 🇷🇺 俄罗斯 (Russia) 04 - hx
   - 🇷🇺 俄罗斯 (Russia) 05 - hx
+  - 🇷🇺 俄罗斯 (Russia) 06 - hx
+  - 🇷🇺 俄罗斯 (Russia) 07 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,5 +94,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hx
   - 🇷🇺 俄罗斯 (Russia) 04 - hx
   - 🇷🇺 俄罗斯 (Russia) 05 - hx
+  - 🇷🇺 俄罗斯 (Russia) 06 - hx
+  - 🇷🇺 俄罗斯 (Russia) 07 - hx
 rules:
 - MATCH,PROXIES
