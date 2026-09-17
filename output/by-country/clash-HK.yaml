@@ -20,6 +20,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
+  type: vless
+  server: 104.16.60.10
+  port: 443
+  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk1.69lover.my
+  network: ws
+  ws-opts:
+    path: /api/v2/e2fe4e52a165854d/stream
+    headers:
+      Host: hk1.69lover.my
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
   type: vmess
   server: 47.83.19.148
   port: 443
@@ -42,6 +56,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - hx
   - 🇭🇰 中国香港 (Hong Kong) 02 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,5 +64,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - hx
   - 🇭🇰 中国香港 (Hong Kong) 02 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 03 - hx
 rules:
 - MATCH,PROXIES
