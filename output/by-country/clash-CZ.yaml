@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 195.85.23.75
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - hx
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - hx
   type: vless
-  server: 195.85.23.219
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -48,21 +48,21 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - hx
   type: vless
-  server: 195.85.23.45
+  server: 162.159.152.4
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 - name: 🇨🇿 CZ 05 - hx
   type: vless
-  server: 195.85.23.88
+  server: 195.85.23.219
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -104,7 +104,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 08 - hx
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -118,7 +118,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 09 - hx
   type: vless
-  server: 195.85.23.111
+  server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -131,6 +131,20 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 10 - hx
+  type: vless
+  server: 195.85.23.111
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 11 - hx
   type: vless
   server: 195.85.23.217
   port: 443
@@ -159,6 +173,7 @@ proxy-groups:
   - 🇨🇿 CZ 08 - hx
   - 🇨🇿 CZ 09 - hx
   - 🇨🇿 CZ 10 - hx
+  - 🇨🇿 CZ 11 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -174,5 +189,6 @@ proxy-groups:
   - 🇨🇿 CZ 08 - hx
   - 🇨🇿 CZ 09 - hx
   - 🇨🇿 CZ 10 - hx
+  - 🇨🇿 CZ 11 - hx
 rules:
 - MATCH,PROXIES

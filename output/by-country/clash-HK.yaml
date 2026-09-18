@@ -17,28 +17,6 @@ proxies:
   servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
-  type: ss
-  server: 181.215.18.196
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: manm1wouaeic9db3
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
   type: vmess
   server: 47.83.19.148
   port: 443
@@ -54,20 +32,44 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  type: vless
-  server: 23.249.18.144
-  port: 8581
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
   network: ws
   ws-opts:
-    path: /channels/act?ed=2560fp=chrome
+    path: /ws-vmess
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
+  type: ss
+  server: 181.215.18.196
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: manm1wouaeic9db3
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
