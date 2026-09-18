@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - hx",
-        "🇫🇮 FI 02 - hx"
+        "🇺🇸 美国 (United States) 01 (家宽) - hx",
+        "🇺🇸 美国 (United States) 02 (家宽) - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - hx",
-        "🇫🇮 FI 02 - hx"
+        "🇺🇸 美国 (United States) 01 (家宽) - hx",
+        "🇺🇸 美国 (United States) 02 (家宽) - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

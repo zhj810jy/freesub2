@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - hx
+- name: 🇮🇪 IE 01 - hx
   type: ss
-  server: 139.28.240.68
-  port: 1080
+  server: 20.238.35.153
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  password: LB2J8MvTt2SBgD6o
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - hx
+  - 🇮🇪 IE 01 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - hx
+  - 🇮🇪 IE 01 - hx
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - hx",
-        "🇰🇷 韩国 (South Korea) 02 - hx",
-        "🇰🇷 韩国 (South Korea) 03 - hx"
+        "🇪🇸 西班牙 (Spain) 01 - hx",
+        "🇪🇸 西班牙 (Spain) 02 - hx",
+        "🇪🇸 西班牙 (Spain) 03 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - hx",
-        "🇰🇷 韩国 (South Korea) 02 - hx",
-        "🇰🇷 韩国 (South Korea) 03 - hx"
+        "🇪🇸 西班牙 (Spain) 01 - hx",
+        "🇪🇸 西班牙 (Spain) 02 - hx",
+        "🇪🇸 西班牙 (Spain) 03 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
