@@ -6,28 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 BE 01 - hx",
-        "🇧🇪 BE 02 - hx",
-        "🇧🇪 BE 03 - hx",
-        "🇧🇪 BE 04 - hx",
-        "🇧🇪 BE 05 - hx",
-        "🇧🇪 BE 06 - hx",
-        "🇧🇪 BE 07 - hx",
-        "🇧🇪 BE 08 - hx"
+        "🇧🇪 BE 01 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 BE 01 - hx",
-        "🇧🇪 BE 02 - hx",
-        "🇧🇪 BE 03 - hx",
-        "🇧🇪 BE 04 - hx",
-        "🇧🇪 BE 05 - hx",
-        "🇧🇪 BE 06 - hx",
-        "🇧🇪 BE 07 - hx",
-        "🇧🇪 BE 08 - hx"
+        "🇧🇪 BE 01 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

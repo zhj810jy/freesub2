@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - hx",
-        "🇹🇷 土耳其 (Turkey) 02 - hx",
-        "🇹🇷 土耳其 (Turkey) 03 - hx"
+        "🇿🇦 ZA 01 - hx",
+        "🇿🇦 ZA 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - hx",
-        "🇹🇷 土耳其 (Turkey) 02 - hx",
-        "🇹🇷 土耳其 (Turkey) 03 - hx"
+        "🇿🇦 ZA 01 - hx",
+        "🇿🇦 ZA 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
