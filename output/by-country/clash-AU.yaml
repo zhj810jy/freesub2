@@ -30,6 +30,54 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
+- name: 🇦🇺 澳大利亚 (Australia) 03 - hx
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇦🇺 澳大利亚 (Australia) 04 - hx
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 05 - hx
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 06 - hx
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +85,10 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - hx
   - 🇦🇺 澳大利亚 (Australia) 02 - hx
+  - 🇦🇺 澳大利亚 (Australia) 03 - hx
+  - 🇦🇺 澳大利亚 (Australia) 04 - hx
+  - 🇦🇺 澳大利亚 (Australia) 05 - hx
+  - 🇦🇺 澳大利亚 (Australia) 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +96,9 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - hx
   - 🇦🇺 澳大利亚 (Australia) 02 - hx
+  - 🇦🇺 澳大利亚 (Australia) 03 - hx
+  - 🇦🇺 澳大利亚 (Australia) 04 - hx
+  - 🇦🇺 澳大利亚 (Australia) 05 - hx
+  - 🇦🇺 澳大利亚 (Australia) 06 - hx
 rules:
 - MATCH,PROXIES

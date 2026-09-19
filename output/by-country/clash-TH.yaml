@@ -6,19 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - hx
   type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  server: 172.67.179.98
+  port: 8880
+  uuid: 82a3c394-55b7-4780-93a0-5f45c0e89625
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-brook-e650.353-3ac.workers.dev
 - name: 🇹🇭 TH 02 - hx
   type: vless
-  server: 103.137.22.71
+  server: 43.159.4.80
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -27,7 +28,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /register?ed=2560fp=chrome
+    path: /episode/files?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 03 - hx
@@ -45,18 +46,16 @@ proxies:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 04 - hx
   type: vless
-  server: 104.18.26.90
+  server: 34.15.162.1
   port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 05 - hx
   type: vless
   server: 34.15.162.1
@@ -68,8 +67,56 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇹🇭 TH 06 - hx
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇹🇭 TH 07 - hx
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇹🇭 TH 08 - hx
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇹🇭 TH 09 - hx
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 10 - hx
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -95,6 +142,10 @@ proxy-groups:
   - 🇹🇭 TH 04 - hx
   - 🇹🇭 TH 05 - hx
   - 🇹🇭 TH 06 - hx
+  - 🇹🇭 TH 07 - hx
+  - 🇹🇭 TH 08 - hx
+  - 🇹🇭 TH 09 - hx
+  - 🇹🇭 TH 10 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,5 +157,9 @@ proxy-groups:
   - 🇹🇭 TH 04 - hx
   - 🇹🇭 TH 05 - hx
   - 🇹🇭 TH 06 - hx
+  - 🇹🇭 TH 07 - hx
+  - 🇹🇭 TH 08 - hx
+  - 🇹🇭 TH 09 - hx
+  - 🇹🇭 TH 10 - hx
 rules:
 - MATCH,PROXIES
