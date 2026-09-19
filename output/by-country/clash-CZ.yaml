@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 195.85.23.88
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - hx
-  type: vless
   server: 84.32.217.120
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -32,6 +18,62 @@ proxies:
     path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇨🇿 CZ 02 - hx
+  type: vless
+  server: 64.227.67.161
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /members/detail/gif
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 CZ 03 - hx
+  type: vless
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 04 - hx
+  type: vless
+  server: 195.85.23.217
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 05 - hx
+  type: vless
+  server: 195.85.23.219
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +81,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - hx
   - 🇨🇿 CZ 02 - hx
+  - 🇨🇿 CZ 03 - hx
+  - 🇨🇿 CZ 04 - hx
+  - 🇨🇿 CZ 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +91,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - hx
   - 🇨🇿 CZ 02 - hx
+  - 🇨🇿 CZ 03 - hx
+  - 🇨🇿 CZ 04 - hx
+  - 🇨🇿 CZ 05 - hx
 rules:
 - MATCH,PROXIES
