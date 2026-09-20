@@ -6,32 +6,51 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  server: 162.159.39.218
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /casc
+    path: /?ed=2560security=tls
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
   type: vless
-  server: 46.8.200.91
+  server: 108.162.198.178
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
+  type: vless
+  server: 161.104.44.138
   port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /my/m/note?ed=2560fp=chrome
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +58,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
+  - 🇷🇺 俄罗斯 (Russia) 03 - hx
+  - 🇷🇺 俄罗斯 (Russia) 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +67,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
+  - 🇷🇺 俄罗斯 (Russia) 03 - hx
+  - 🇷🇺 俄罗斯 (Russia) 04 - hx
 rules:
 - MATCH,PROXIES

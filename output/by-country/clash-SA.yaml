@@ -15,7 +15,7 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - hx
@@ -34,7 +34,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 03 - hx
   type: vless
-  server: 91.209.253.42
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -48,7 +48,35 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 04 - hx
   type: vless
-  server: 91.209.253.216
+  server: 91.209.253.68
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 05 - hx
+  type: vless
+  server: 91.209.253.119
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 06 - hx
+  type: vless
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -69,6 +97,8 @@ proxy-groups:
   - 🇸🇦 SA 02 - hx
   - 🇸🇦 SA 03 - hx
   - 🇸🇦 SA 04 - hx
+  - 🇸🇦 SA 05 - hx
+  - 🇸🇦 SA 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +108,7 @@ proxy-groups:
   - 🇸🇦 SA 02 - hx
   - 🇸🇦 SA 03 - hx
   - 🇸🇦 SA 04 - hx
+  - 🇸🇦 SA 05 - hx
+  - 🇸🇦 SA 06 - hx
 rules:
 - MATCH,PROXIES
