@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - hx
   type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /files
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇧🇷 BR 02 - hx
-  type: vless
   server: 157.151.4.93
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - hx
-  - 🇧🇷 BR 02 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - hx
-  - 🇧🇷 BR 02 - hx
 rules:
 - MATCH,PROXIES
