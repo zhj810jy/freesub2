@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇨🇱 CL 03 - hx
   type: vless
   server: platform118.golnamakcert.top
@@ -41,19 +41,6 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇨🇱 CL 04 - hx
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +49,6 @@ proxy-groups:
   - 🇨🇱 CL 01 - hx
   - 🇨🇱 CL 02 - hx
   - 🇨🇱 CL 03 - hx
-  - 🇨🇱 CL 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +57,5 @@ proxy-groups:
   - 🇨🇱 CL 01 - hx
   - 🇨🇱 CL 02 - hx
   - 🇨🇱 CL 03 - hx
-  - 🇨🇱 CL 04 - hx
 rules:
 - MATCH,PROXIES
