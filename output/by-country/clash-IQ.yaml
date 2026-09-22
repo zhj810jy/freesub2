@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - hx
+  type: vless
+  server: 188.114.96.9
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  network: ws
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+- name: 🇮🇶 IQ 02 - hx
+  type: vless
+  server: 172.67.158.158
+  port: 443
+  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 4zgCcbCb10PqYIBNwmM4NVzNj4.RoyaehmaN5.WORkErs.DeV
+  network: ws
+  ws-opts:
+    path: /vl/hVKvQ38dIVUYYMACe6IBe4E?ed=2560
+    headers:
+      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - hx
+  - 🇮🇶 IQ 02 - hx
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - hx
+  - 🇮🇶 IQ 02 - hx
+rules:
+- MATCH,PROXIES
