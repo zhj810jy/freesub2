@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
   type: vless
-  server: tr3.wba-pn.ru
+  server: 46.8.200.91
   port: 443
-  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tr3.wba-pn.ru
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /
+    path: /cdn/v3/live
     headers:
-      Host: tr3.wba-pn.ru
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
