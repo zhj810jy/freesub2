@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - hx
   type: vless
-  server: 103.63.30.163
+  server: 103.63.30.73
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true

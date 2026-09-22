@@ -6,92 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
   type: vless
-  server: www.hongkongairport.com
+  server: tr3.wba-pn.ru
   port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - hx
-  type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
-  type: vless
-  server: 162.159.130.234
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
+  servername: tr3.wba-pn.ru
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
-  type: vless
-  server: 172.64.229.2
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - hx
-  type: vless
-  server: 5.129.238.144
-  port: 8443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xinnusvpn.duckdns.org
-  network: ws
-  ws-opts:
-    path: /wsnl
-    headers:
-      Host: xinnusvpn.duckdns.org
+      Host: tr3.wba-pn.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
-  - 🇷🇺 俄罗斯 (Russia) 02 - hx
-  - 🇷🇺 俄罗斯 (Russia) 03 - hx
-  - 🇷🇺 俄罗斯 (Russia) 04 - hx
-  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
-  - 🇷🇺 俄罗斯 (Russia) 02 - hx
-  - 🇷🇺 俄罗斯 (Russia) 03 - hx
-  - 🇷🇺 俄罗斯 (Russia) 04 - hx
-  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 rules:
 - MATCH,PROXIES
