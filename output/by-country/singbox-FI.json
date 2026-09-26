@@ -6,34 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - hx",
-        "🇫🇮 FI 02 - hx",
-        "🇫🇮 FI 03 - hx",
-        "🇫🇮 FI 04 - hx",
-        "🇫🇮 FI 05 - hx",
-        "🇫🇮 FI 06 - hx",
-        "🇫🇮 FI 07 - hx",
-        "🇫🇮 FI 08 - hx",
-        "🇫🇮 FI 09 - hx",
-        "🇫🇮 FI 10 - hx",
-        "🇫🇮 FI 11 - hx"
+        "🇫🇮 FI 01 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - hx",
-        "🇫🇮 FI 02 - hx",
-        "🇫🇮 FI 03 - hx",
-        "🇫🇮 FI 04 - hx",
-        "🇫🇮 FI 05 - hx",
-        "🇫🇮 FI 06 - hx",
-        "🇫🇮 FI 07 - hx",
-        "🇫🇮 FI 08 - hx",
-        "🇫🇮 FI 09 - hx",
-        "🇫🇮 FI 10 - hx",
-        "🇫🇮 FI 11 - hx"
+        "🇫🇮 FI 01 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
