@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇨🇱 CL 01 - hx",
-        "🇨🇱 CL 02 - hx"
+        "🇨🇱 CL 02 - hx",
+        "🇨🇱 CL 03 - hx",
+        "🇨🇱 CL 04 - hx"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 CL 01 - hx",
-        "🇨🇱 CL 02 - hx"
+        "🇨🇱 CL 02 - hx",
+        "🇨🇱 CL 03 - hx",
+        "🇨🇱 CL 04 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
