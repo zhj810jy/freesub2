@@ -31,6 +31,13 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇿🇦 ZA 04 - hx
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +46,7 @@ proxy-groups:
   - 🇿🇦 ZA 01 - hx
   - 🇿🇦 ZA 02 - hx
   - 🇿🇦 ZA 03 - hx
+  - 🇿🇦 ZA 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +55,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - hx
   - 🇿🇦 ZA 02 - hx
   - 🇿🇦 ZA 03 - hx
+  - 🇿🇦 ZA 04 - hx
 rules:
 - MATCH,PROXIES
