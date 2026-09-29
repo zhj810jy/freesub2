@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - hx
   type: vless
+  server: 104.21.31.137
+  port: 443
+  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
+  network: ws
+  ws-opts:
+    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
+    headers:
+      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 02 - hx
+  type: vless
+  server: 141.101.120.73
+  port: 443
+  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 03 - hx
+  type: vless
   server: 172.105.169.70
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -13,17 +41,53 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 04 - hx
+  type: vless
+  server: 104.26.11.189
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇦🇺 澳大利亚 (Australia) 05 - hx
+  type: vless
+  server: 104.26.11.189
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - hx
+  - 🇦🇺 澳大利亚 (Australia) 02 - hx
+  - 🇦🇺 澳大利亚 (Australia) 03 - hx
+  - 🇦🇺 澳大利亚 (Australia) 04 - hx
+  - 🇦🇺 澳大利亚 (Australia) 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - hx
+  - 🇦🇺 澳大利亚 (Australia) 02 - hx
+  - 🇦🇺 澳大利亚 (Australia) 03 - hx
+  - 🇦🇺 澳大利亚 (Australia) 04 - hx
+  - 🇦🇺 澳大利亚 (Australia) 05 - hx
 rules:
 - MATCH,PROXIES

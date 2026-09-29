@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - hx
   type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 02 - hx
+  type: vless
+  server: 104.26.11.253
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇮🇪 IE 03 - hx
+  type: vless
   server: 45.141.234.138
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -18,17 +46,69 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 04 - hx
+  type: vless
+  server: 104.25.3.165
+  port: 443
+  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: patient-moon-c61f.ggfsa55.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: patient-moon-c61f.ggfsa55.workers.dev
+- name: 🇮🇪 IE 05 - hx
+  type: vless
+  server: 172.67.184.43
+  port: 443
+  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: purple-butterfly-8496.erfannull36.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: purple-butterfly-8496.erfannull36.workers.dev
+- name: 🇮🇪 IE 06 - hx
+  type: vless
+  server: 172.67.214.192
+  port: 443
+  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pruritus.patiromer.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pruritus.patiromer.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - hx
+  - 🇮🇪 IE 02 - hx
+  - 🇮🇪 IE 03 - hx
+  - 🇮🇪 IE 04 - hx
+  - 🇮🇪 IE 05 - hx
+  - 🇮🇪 IE 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - hx
+  - 🇮🇪 IE 02 - hx
+  - 🇮🇪 IE 03 - hx
+  - 🇮🇪 IE 04 - hx
+  - 🇮🇪 IE 05 - hx
+  - 🇮🇪 IE 06 - hx
 rules:
 - MATCH,PROXIES
