@@ -7,7 +7,7 @@ proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - hx
   type: vless
   server: 185.112.249.201
-  port: 8443
+  port: 2053
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
@@ -20,33 +20,6 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - hx
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - hx
-  type: vless
-  server: 185.112.249.201
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - hx
-  type: vless
   server: 185.112.249.201
   port: 8443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -59,86 +32,7 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - hx
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - hx
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - hx
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - hx
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - hx
-  type: vless
-  server: 185.112.249.201
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 10 - hx
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - hx
+- name: 🇦🇪 阿联酋 (UAE) 03 - hx
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -159,14 +53,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - hx
   - 🇦🇪 阿联酋 (UAE) 02 - hx
   - 🇦🇪 阿联酋 (UAE) 03 - hx
-  - 🇦🇪 阿联酋 (UAE) 04 - hx
-  - 🇦🇪 阿联酋 (UAE) 05 - hx
-  - 🇦🇪 阿联酋 (UAE) 06 - hx
-  - 🇦🇪 阿联酋 (UAE) 07 - hx
-  - 🇦🇪 阿联酋 (UAE) 08 - hx
-  - 🇦🇪 阿联酋 (UAE) 09 - hx
-  - 🇦🇪 阿联酋 (UAE) 10 - hx
-  - 🇦🇪 阿联酋 (UAE) 11 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -175,13 +61,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - hx
   - 🇦🇪 阿联酋 (UAE) 02 - hx
   - 🇦🇪 阿联酋 (UAE) 03 - hx
-  - 🇦🇪 阿联酋 (UAE) 04 - hx
-  - 🇦🇪 阿联酋 (UAE) 05 - hx
-  - 🇦🇪 阿联酋 (UAE) 06 - hx
-  - 🇦🇪 阿联酋 (UAE) 07 - hx
-  - 🇦🇪 阿联酋 (UAE) 08 - hx
-  - 🇦🇪 阿联酋 (UAE) 09 - hx
-  - 🇦🇪 阿联酋 (UAE) 10 - hx
-  - 🇦🇪 阿联酋 (UAE) 11 - hx
 rules:
 - MATCH,PROXIES
