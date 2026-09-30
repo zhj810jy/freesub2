@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - hx
+  type: ss
+  server: 195.238.126.20
+  port: 9011
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+  udp: true
+- name: 🇱🇹 LT 02 - hx
   type: vless
   server: 213.183.55.153
   port: 8443
@@ -24,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - hx
+  - 🇱🇹 LT 02 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - hx
+  - 🇱🇹 LT 02 - hx
 rules:
 - MATCH,PROXIES

@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT 01 - hx"
+        "🇱🇹 LT 01 - hx",
+        "🇱🇹 LT 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT 01 - hx"
+        "🇱🇹 LT 01 - hx",
+        "🇱🇹 LT 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
