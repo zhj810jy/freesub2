@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 GE 01 - hx"
+        "🇱🇰 LK 01 - hx",
+        "🇱🇰 LK 02 - hx",
+        "🇱🇰 LK 03 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 GE 01 - hx"
+        "🇱🇰 LK 01 - hx",
+        "🇱🇰 LK 02 - hx",
+        "🇱🇰 LK 03 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

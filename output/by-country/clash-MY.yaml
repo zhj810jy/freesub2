@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - hx
   type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 02 - hx
-  type: vless
   server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -30,6 +17,19 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 02 - hx
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 03 - hx
   type: vless
   server: platform115.golnamakcert.top
@@ -54,19 +54,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇲🇾 MY 05 - hx
-  type: vless
-  server: platform113.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇲🇾 MY 06 - hx
   type: ss
   server: 130.94.69.15
   port: 7001
@@ -83,7 +70,6 @@ proxy-groups:
   - 🇲🇾 MY 03 - hx
   - 🇲🇾 MY 04 - hx
   - 🇲🇾 MY 05 - hx
-  - 🇲🇾 MY 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,6 +80,5 @@ proxy-groups:
   - 🇲🇾 MY 03 - hx
   - 🇲🇾 MY 04 - hx
   - 🇲🇾 MY 05 - hx
-  - 🇲🇾 MY 06 - hx
 rules:
 - MATCH,PROXIES
