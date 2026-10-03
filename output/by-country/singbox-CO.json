@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - hx",
-        "🇱🇰 LK 02 - hx",
-        "🇱🇰 LK 03 - hx",
-        "🇱🇰 LK 04 - hx"
+        "🇨🇴 CO 01 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - hx",
-        "🇱🇰 LK 02 - hx",
-        "🇱🇰 LK 03 - hx",
-        "🇱🇰 LK 04 - hx"
+        "🇨🇴 CO 01 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
