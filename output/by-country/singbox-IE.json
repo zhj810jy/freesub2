@@ -6,20 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - hx",
-        "🇧🇾 BY 02 - hx",
-        "🇧🇾 BY 03 - hx",
-        "🇧🇾 BY 04 - hx"
+        "🇮🇪 IE 01 - hx",
+        "🇮🇪 IE 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - hx",
-        "🇧🇾 BY 02 - hx",
-        "🇧🇾 BY 03 - hx",
-        "🇧🇾 BY 04 - hx"
+        "🇮🇪 IE 01 - hx",
+        "🇮🇪 IE 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇸 西班牙 (Spain) 01 - hx
+- name: 🇮🇪 IE 01 - hx
   type: ss
-  server: 140.174.184.5
-  port: 8388
+  server: 20.107.219.181
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: 2fGnKgP8k8EHFuvj
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - hx
+- name: 🇮🇪 IE 02 - hx
   type: ss
-  server: 108.181.121.226
-  port: 8388
+  server: 20.107.219.181
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: 2fGnKgP8k8EHFuvj
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇸 西班牙 (Spain) 01 - hx
-  - 🇪🇸 西班牙 (Spain) 02 - hx
+  - 🇮🇪 IE 01 - hx
+  - 🇮🇪 IE 02 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 (Spain) 01 - hx
-  - 🇪🇸 西班牙 (Spain) 02 - hx
+  - 🇮🇪 IE 01 - hx
+  - 🇮🇪 IE 02 - hx
 rules:
 - MATCH,PROXIES
