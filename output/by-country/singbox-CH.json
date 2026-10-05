@@ -7,7 +7,8 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH 01 - hx",
-        "🇨🇭 CH 02 - hx"
+        "🇨🇭 CH 02 - hx",
+        "🇨🇭 CH 03 - hx"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 CH 01 - hx",
-        "🇨🇭 CH 02 - hx"
+        "🇨🇭 CH 02 - hx",
+        "🇨🇭 CH 03 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
