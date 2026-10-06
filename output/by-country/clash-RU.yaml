@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
   type: vless
-  server: 104.18.46.234
+  server: 162.159.43.187
   port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -18,34 +18,15 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
-  type: vless
-  server: 172.64.229.170
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 194.87.196.13
+  port: 10771
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - hx
   type: vless
-  server: 162.159.43.187
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
-  type: vless
-  server: 172.64.42.85
+  server: 188.114.97.6
   port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -53,13 +34,13 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - hx
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
   type: vless
-  server: 172.64.229.170
-  port: 80
+  server: 172.64.32.108
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -78,7 +59,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
   - 🇷🇺 俄罗斯 (Russia) 03 - hx
   - 🇷🇺 俄罗斯 (Russia) 04 - hx
-  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,6 +68,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
   - 🇷🇺 俄罗斯 (Russia) 03 - hx
   - 🇷🇺 俄罗斯 (Russia) 04 - hx
-  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 rules:
 - MATCH,PROXIES
