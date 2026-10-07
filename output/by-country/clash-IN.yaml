@@ -15,20 +15,8 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - hx
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - hx
   type: vmess
   server: 185.67.125.90
   port: 443
@@ -44,6 +32,18 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
+- name: 🇮🇳 印度 (India) 03 - hx
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - hx
   type: vless
   server: 194.61.31.126
@@ -57,22 +57,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 05 - hx
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇮🇳 印度 (India) 06 - hx
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -83,7 +67,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,7 +78,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - hx
   - 🇮🇳 印度 (India) 04 - hx
   - 🇮🇳 印度 (India) 05 - hx
-  - 🇮🇳 印度 (India) 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,6 +88,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - hx
   - 🇮🇳 印度 (India) 04 - hx
   - 🇮🇳 印度 (India) 05 - hx
-  - 🇮🇳 印度 (India) 06 - hx
 rules:
 - MATCH,PROXIES
