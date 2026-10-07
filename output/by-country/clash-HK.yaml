@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hx
   type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
-  type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  type: vmess
   server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -62,39 +20,37 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
   type: vmess
-  server: 194.99.79.26
+  server: 47.243.153.153
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -109,22 +65,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - hx
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,10 +74,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - hx
   - 🇭🇰 中国香港 (Hong Kong) 03 - hx
   - 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 06 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 07 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 08 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,9 +83,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - hx
   - 🇭🇰 中国香港 (Hong Kong) 03 - hx
   - 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 05 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 06 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 07 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 08 - hx
 rules:
 - MATCH,PROXIES
