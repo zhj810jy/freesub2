@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hx
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 02 - hx
   type: vless
   server: 144.31.99.252
   port: 443
@@ -18,20 +25,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇫🇮 FI 02 - hx
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 03 - hx
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - hx
   - 🇫🇮 FI 02 - hx
-  - 🇫🇮 FI 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - hx
   - 🇫🇮 FI 02 - hx
-  - 🇫🇮 FI 03 - hx
 rules:
 - MATCH,PROXIES

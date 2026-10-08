@@ -5,42 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hx
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+      Host: ccc.010304.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
   type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
-  type: vmess
   server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
   udp: true
@@ -51,14 +33,22 @@ proxies:
     path: /arki
     headers:
       Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
-  type: ss
-  server: telegram.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
   type: vmess
   server: 6JDvArazgU3qQR6Q.v.3dns.vip
   port: 443
@@ -74,9 +64,21 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
   type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 47.243.65.243
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -93,21 +95,6 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
   type: vmess
   server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - hx
-  type: vmess
-  server: 47.244.120.197
   port: 23026
   uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
@@ -119,85 +106,71 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - hx
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
       Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - hx
-  type: ss
-  server: 181.215.18.196
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - hx
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - hx
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - hx
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - hx
-  type: ss
-  server: telegramx.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - hx
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - hx
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jmp1.907737.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - hx
-  type: ss
-  server: 181.215.18.110
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - hx
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - hx
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -214,10 +187,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - hx
   - 🇭🇰 中国香港 (Hong Kong) 10 - hx
   - 🇭🇰 中国香港 (Hong Kong) 11 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 12 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 13 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 14 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 15 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -234,9 +203,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - hx
   - 🇭🇰 中国香港 (Hong Kong) 10 - hx
   - 🇭🇰 中国香港 (Hong Kong) 11 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 12 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 13 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 14 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 15 - hx
 rules:
 - MATCH,PROXIES
