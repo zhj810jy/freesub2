@@ -7,7 +7,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI 01 - hx",
-        "🇫🇮 FI 02 - hx"
+        "🇫🇮 FI 02 - hx",
+        "🇫🇮 FI 03 - hx"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI 01 - hx",
-        "🇫🇮 FI 02 - hx"
+        "🇫🇮 FI 02 - hx",
+        "🇫🇮 FI 03 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
