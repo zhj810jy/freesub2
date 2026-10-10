@@ -32,6 +32,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: YF329KNGVTUZ1qrH
   udp: true
+- name: 🇮🇪 IE 04 - hx
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +47,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - hx
   - 🇮🇪 IE 02 - hx
   - 🇮🇪 IE 03 - hx
+  - 🇮🇪 IE 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +56,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - hx
   - 🇮🇪 IE 02 - hx
   - 🇮🇪 IE 03 - hx
+  - 🇮🇪 IE 04 - hx
 rules:
 - MATCH,PROXIES
