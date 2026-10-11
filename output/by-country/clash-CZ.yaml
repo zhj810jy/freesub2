@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
+  server: 104.21.31.137
+  port: 443
+  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
     headers:
-      Host: blue-rice-7142.30-346.workers.dev
+      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
