@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - hx
   type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - hx
-  type: vless
-  server: platform101.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -28,10 +14,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform102
     headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 03 - hx
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 02 - hx
   type: vless
   server: 216.173.67.59
   port: 443
@@ -45,9 +31,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 04 - hx
+- name: 🇲🇾 MY 03 - hx
   type: vless
-  server: platform102.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -55,9 +41,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform101
     headers:
-      Host: platform102.halalkhor.info
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +52,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - hx
   - 🇲🇾 MY 02 - hx
   - 🇲🇾 MY 03 - hx
-  - 🇲🇾 MY 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +60,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - hx
   - 🇲🇾 MY 02 - hx
   - 🇲🇾 MY 03 - hx
-  - 🇲🇾 MY 04 - hx
 rules:
 - MATCH,PROXIES
