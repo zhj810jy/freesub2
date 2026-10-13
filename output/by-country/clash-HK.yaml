@@ -5,21 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hx
-  type: vmess
-  server: 47.76.44.32
+  type: vless
+  server: 34.92.19.135
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
   type: vless
   server: 34.92.19.135
@@ -43,7 +39,7 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
   type: vless
   server: 34.92.19.135
@@ -55,7 +51,7 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
   type: vless
   server: 34.92.19.135
@@ -67,7 +63,7 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
   type: vless
   server: 34.92.19.135
@@ -79,23 +75,19 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
-  type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+  type: vless
+  server: 34.92.19.135
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - hx
   type: vless
   server: 43.129.80.179
@@ -111,29 +103,20 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - hx
-  type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - hx
-  type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,7 +131,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - hx
   - 🇭🇰 中国香港 (Hong Kong) 08 - hx
   - 🇭🇰 中国香港 (Hong Kong) 09 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 10 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -163,6 +145,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - hx
   - 🇭🇰 中国香港 (Hong Kong) 08 - hx
   - 🇭🇰 中国香港 (Hong Kong) 09 - hx
-  - 🇭🇰 中国香港 (Hong Kong) 10 - hx
 rules:
 - MATCH,PROXIES
