@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 03 - hx
   type: vless
   server: 194.76.154.31
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 04 - hx
   type: vless
   server: 194.76.154.31
@@ -51,8 +51,15 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇾 CY 05 - hx
+  type: ss
+  server: frr.drwrdoh.org
+  port: 8086
+  cipher: 2022-blake3-aes-256-gcm
+  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y=
+  udp: true
+- name: 🇨🇾 CY 06 - hx
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -74,6 +81,7 @@ proxy-groups:
   - 🇨🇾 CY 03 - hx
   - 🇨🇾 CY 04 - hx
   - 🇨🇾 CY 05 - hx
+  - 🇨🇾 CY 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +92,6 @@ proxy-groups:
   - 🇨🇾 CY 03 - hx
   - 🇨🇾 CY 04 - hx
   - 🇨🇾 CY 05 - hx
+  - 🇨🇾 CY 06 - hx
 rules:
 - MATCH,PROXIES
