@@ -8,7 +8,9 @@
         "auto",
         "🇮🇪 IE 01 - hx",
         "🇮🇪 IE 02 - hx",
-        "🇮🇪 IE 03 - hx"
+        "🇮🇪 IE 03 - hx",
+        "🇮🇪 IE 04 - hx",
+        "🇮🇪 IE 05 - hx"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "outbounds": [
         "🇮🇪 IE 01 - hx",
         "🇮🇪 IE 02 - hx",
-        "🇮🇪 IE 03 - hx"
+        "🇮🇪 IE 03 - hx",
+        "🇮🇪 IE 04 - hx",
+        "🇮🇪 IE 05 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
