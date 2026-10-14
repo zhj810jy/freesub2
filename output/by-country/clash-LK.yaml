@@ -7,12 +7,11 @@ proxies:
 - name: 🇱🇰 LK 01 - hx
   type: vless
   server: free.sahanwickramasinghe.me
-  port: 2096
-  uuid: 13d72f62-ca03-4f06-acc4-409f5dc2f4e6
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: microsoft.com
   network: ws
   ws-opts:
     path: /
@@ -32,19 +31,6 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 03 - hx
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇱🇰 LK 01 - hx
   - 🇱🇰 LK 02 - hx
-  - 🇱🇰 LK 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇱🇰 LK 01 - hx
   - 🇱🇰 LK 02 - hx
-  - 🇱🇰 LK 03 - hx
 rules:
 - MATCH,PROXIES
