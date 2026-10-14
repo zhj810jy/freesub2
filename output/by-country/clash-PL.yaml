@@ -37,6 +37,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 04 - hx
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +54,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - hx
   - 🇵🇱 PL 02 - hx
   - 🇵🇱 PL 03 - hx
+  - 🇵🇱 PL 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +63,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - hx
   - 🇵🇱 PL 02 - hx
   - 🇵🇱 PL 03 - hx
+  - 🇵🇱 PL 04 - hx
 rules:
 - MATCH,PROXIES
