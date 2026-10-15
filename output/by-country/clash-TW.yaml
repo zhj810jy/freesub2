@@ -5,58 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - hx
-  type: vless
-  server: tw.giannaycs.com
-  port: 12943
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tw.giannaycs.com
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - hx
-  type: vless
-  server: tw.giannaycs.com
-  port: 12943
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tw.giannaycs.com
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - hx
-  type: vless
-  server: zs.giannaycs.com
-  port: 12943
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zs.giannaycs.com
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - hx
-  type: vmess
-  server: fujrdt.d6f54hd1j.cc
-  port: 443
-  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fujrdt.d6f54hd1j.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fujrdt.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - hx
-  type: vless
-  server: zs.giannaycs.com
-  port: 12943
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zs.giannaycs.com
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - hx
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -72,21 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 02 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 03 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 04 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 05 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 02 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 03 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 04 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 05 - hx
-  - 🇹🇼 中国台湾 (Taiwan) 06 - hx
 rules:
 - MATCH,PROXIES
