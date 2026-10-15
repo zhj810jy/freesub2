@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - hx
   type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 02 - hx
-  type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 02 - hx
+  type: ss
+  server: 20.164.209.198
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: IdBspBchqpInOZFK
   udp: true
 - name: 🇿🇦 ZA 03 - hx
   type: vless
@@ -31,6 +31,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇿🇦 ZA 04 - hx
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 05 - hx
   type: vless
   server: 34.35.189.111
   port: 443
@@ -51,6 +58,7 @@ proxy-groups:
   - 🇿🇦 ZA 02 - hx
   - 🇿🇦 ZA 03 - hx
   - 🇿🇦 ZA 04 - hx
+  - 🇿🇦 ZA 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +68,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - hx
   - 🇿🇦 ZA 03 - hx
   - 🇿🇦 ZA 04 - hx
+  - 🇿🇦 ZA 05 - hx
 rules:
 - MATCH,PROXIES

@@ -20,30 +20,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇦🇹 AT 03 - hx
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇹 AT 04 - hx
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇹 AT 05 - hx
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇹 AT 06 - hx
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -58,9 +34,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - hx
   - 🇦🇹 AT 02 - hx
   - 🇦🇹 AT 03 - hx
-  - 🇦🇹 AT 04 - hx
-  - 🇦🇹 AT 05 - hx
-  - 🇦🇹 AT 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,8 +42,5 @@ proxy-groups:
   - 🇦🇹 AT 01 - hx
   - 🇦🇹 AT 02 - hx
   - 🇦🇹 AT 03 - hx
-  - 🇦🇹 AT 04 - hx
-  - 🇦🇹 AT 05 - hx
-  - 🇦🇹 AT 06 - hx
 rules:
 - MATCH,PROXIES
