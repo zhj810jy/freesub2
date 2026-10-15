@@ -1,0 +1,156 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇭 CH 01 - hx
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 02 - hx
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
+- name: 🇨🇭 CH 03 - hx
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 04 - hx
+  type: vless
+  server: 128.241.25.72
+  port: 30021
+  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇨🇭 CH 05 - hx
+  type: vless
+  server: 54.179.79.12
+  port: 53646
+  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇨🇭 CH 06 - hx
+  type: vless
+  server: 45.133.151.186
+  port: 25393
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 07 - hx
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - hx
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 09 - hx
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 10 - hx
+  type: vless
+  server: 87.228.92.113
+  port: 25576
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇭 CH 01 - hx
+  - 🇨🇭 CH 02 - hx
+  - 🇨🇭 CH 03 - hx
+  - 🇨🇭 CH 04 - hx
+  - 🇨🇭 CH 05 - hx
+  - 🇨🇭 CH 06 - hx
+  - 🇨🇭 CH 07 - hx
+  - 🇨🇭 CH 08 - hx
+  - 🇨🇭 CH 09 - hx
+  - 🇨🇭 CH 10 - hx
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇭 CH 01 - hx
+  - 🇨🇭 CH 02 - hx
+  - 🇨🇭 CH 03 - hx
+  - 🇨🇭 CH 04 - hx
+  - 🇨🇭 CH 05 - hx
+  - 🇨🇭 CH 06 - hx
+  - 🇨🇭 CH 07 - hx
+  - 🇨🇭 CH 08 - hx
+  - 🇨🇭 CH 09 - hx
+  - 🇨🇭 CH 10 - hx
+rules:
+- MATCH,PROXIES
