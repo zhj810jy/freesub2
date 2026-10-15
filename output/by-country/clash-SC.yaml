@@ -7,29 +7,19 @@ proxies:
 - name: 🇸🇨 SC 01 - hx
   type: vless
   server: 45.137.43.168
-  port: 14430
+  port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 02 - hx
   type: vless
   server: 45.137.43.168
-  port: 14430
+  port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 03 - hx
   type: vless
   server: 45.137.43.168
@@ -38,6 +28,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 04 - hx
+  type: vless
+  server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+- name: 🇸🇨 SC 05 - hx
+  type: vless
+  server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +62,8 @@ proxy-groups:
   - 🇸🇨 SC 01 - hx
   - 🇸🇨 SC 02 - hx
   - 🇸🇨 SC 03 - hx
+  - 🇸🇨 SC 04 - hx
+  - 🇸🇨 SC 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +72,7 @@ proxy-groups:
   - 🇸🇨 SC 01 - hx
   - 🇸🇨 SC 02 - hx
   - 🇸🇨 SC 03 - hx
+  - 🇸🇨 SC 04 - hx
+  - 🇸🇨 SC 05 - hx
 rules:
 - MATCH,PROXIES
