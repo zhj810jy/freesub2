@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - hx
@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - hx
@@ -55,16 +55,8 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - hx
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - hx
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -75,7 +67,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,7 +78,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - hx
   - 🇹🇷 土耳其 (Turkey) 04 - hx
   - 🇹🇷 土耳其 (Turkey) 05 - hx
-  - 🇹🇷 土耳其 (Turkey) 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,6 +88,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - hx
   - 🇹🇷 土耳其 (Turkey) 04 - hx
   - 🇹🇷 土耳其 (Turkey) 05 - hx
-  - 🇹🇷 土耳其 (Turkey) 06 - hx
 rules:
 - MATCH,PROXIES
