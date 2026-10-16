@@ -6,16 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - hx
   type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: random
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - hx
   type: vless
   server: 2.26.225.89
@@ -36,6 +33,18 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - hx
   type: vless
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: random
+- name: 🇵🇱 PL 05 - hx
+  type: vless
   server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -43,7 +52,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - hx
+- name: 🇵🇱 PL 06 - hx
   type: vless
   server: pl4.h1cloud.net
   port: 25080
@@ -55,11 +64,11 @@ proxies:
     public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
   servername: www.ceneo.pl
   client-fingerprint: chrome
-- name: 🇵🇱 PL 06 - hx
+- name: 🇵🇱 PL 07 - hx
   type: vless
   server: pl4.h1cloud.net
   port: 25080
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -67,15 +76,6 @@ proxies:
     public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
   servername: www.ceneo.pl
   client-fingerprint: random
-- name: 🇵🇱 PL 07 - hx
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
