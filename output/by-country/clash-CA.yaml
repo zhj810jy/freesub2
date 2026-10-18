@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - hx
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=2560
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇨🇦 加拿大 (Canada) 02 - hx
   type: vless
   server: 66.70.179.198
@@ -22,43 +29,63 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 03 - hx
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=2560
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇨🇦 加拿大 (Canada) 04 - hx
   type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇨🇦 加拿大 (Canada) 05 - hx
   type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇨🇦 加拿大 (Canada) 06 - hx
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇨🇦 加拿大 (Canada) 07 - hx
   type: vmess
   server: 134.195.196.211
@@ -71,22 +98,28 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 08 - hx
   type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇨🇦 加拿大 (Canada) 09 - hx
   type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 10 - hx
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -96,7 +129,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 11 - hx
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -105,10 +138,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12 - hx
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -123,6 +158,76 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 14 - hx
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 15 - hx
+  type: vless
+  server: 172.67.222.62
+  port: 443
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf-vless-4cf55824.aimall.fr
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
+- name: 🇨🇦 加拿大 (Canada) 16 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 17 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 18 - hx
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 19 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub?ed=2048
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 20 - hx
   type: vless
   server: milo.rubinaz.xyz
   port: 8080
@@ -130,36 +235,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 15 - hx
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 16 - hx
+- name: 🇨🇦 加拿大 (Canada) 21 - hx
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 17 - hx
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 18 - hx
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 22 - hx
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -169,21 +259,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 19 - hx
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 20 - hx
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 21 - hx
+- name: 🇨🇦 加拿大 (Canada) 23 - hx
   type: vless
   server: milo.rubinaz.xyz
   port: 8080
@@ -191,19 +267,258 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 22 - hx
+- name: 🇨🇦 加拿大 (Canada) 24 - hx
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 23 - hx
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 25 - hx
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 26 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 27 - hx
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 28 - hx
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 29 - hx
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 30 - hx
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 31 - hx
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 32 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 33 - hx
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 34 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 35 - hx
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 36 - hx
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 37 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 38 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MTMVPN--MTMVPN--MTMVPN--MTMVPN?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 39 - hx
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 40 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 41 - hx
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 42 - hx
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 43 - hx
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 44 - hx
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 45 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 46 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 47 - hx
   type: vless
   server: 148.113.196.75
   port: 8443
@@ -217,37 +532,35 @@ proxies:
     path: /vless/
     headers:
       Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 24 - hx
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 48 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - hx
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip?ed#Telegram---mehrosaboran
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 49 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - hx
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 27 - hx
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 50 - hx
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -257,7 +570,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 28 - hx
+- name: 🇨🇦 加拿大 (Canada) 51 - hx
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 52 - hx
   type: vless
   server: milo.rubinaz.xyz
   port: 8080
@@ -265,57 +585,132 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 29 - hx
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 53 - hx
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 30 - hx
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 54 - hx
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 55 - hx
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 56 - hx
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 57 - hx
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 58 - hx
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 59 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 60 - hx
   type: ss
   server: 51.79.64.198
   port: 8119
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 31 - hx
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 61 - hx
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 62 - hx
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇨🇦 加拿大 (Canada) 63 - hx
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 64 - hx
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 32 - hx
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 33 - hx
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 34 - hx
-  type: ss
-  server: 51.222.155.113
-  port: 5601
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -355,6 +750,36 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 32 - hx
   - 🇨🇦 加拿大 (Canada) 33 - hx
   - 🇨🇦 加拿大 (Canada) 34 - hx
+  - 🇨🇦 加拿大 (Canada) 35 - hx
+  - 🇨🇦 加拿大 (Canada) 36 - hx
+  - 🇨🇦 加拿大 (Canada) 37 - hx
+  - 🇨🇦 加拿大 (Canada) 38 - hx
+  - 🇨🇦 加拿大 (Canada) 39 - hx
+  - 🇨🇦 加拿大 (Canada) 40 - hx
+  - 🇨🇦 加拿大 (Canada) 41 - hx
+  - 🇨🇦 加拿大 (Canada) 42 - hx
+  - 🇨🇦 加拿大 (Canada) 43 - hx
+  - 🇨🇦 加拿大 (Canada) 44 - hx
+  - 🇨🇦 加拿大 (Canada) 45 - hx
+  - 🇨🇦 加拿大 (Canada) 46 - hx
+  - 🇨🇦 加拿大 (Canada) 47 - hx
+  - 🇨🇦 加拿大 (Canada) 48 - hx
+  - 🇨🇦 加拿大 (Canada) 49 - hx
+  - 🇨🇦 加拿大 (Canada) 50 - hx
+  - 🇨🇦 加拿大 (Canada) 51 - hx
+  - 🇨🇦 加拿大 (Canada) 52 - hx
+  - 🇨🇦 加拿大 (Canada) 53 - hx
+  - 🇨🇦 加拿大 (Canada) 54 - hx
+  - 🇨🇦 加拿大 (Canada) 55 - hx
+  - 🇨🇦 加拿大 (Canada) 56 - hx
+  - 🇨🇦 加拿大 (Canada) 57 - hx
+  - 🇨🇦 加拿大 (Canada) 58 - hx
+  - 🇨🇦 加拿大 (Canada) 59 - hx
+  - 🇨🇦 加拿大 (Canada) 60 - hx
+  - 🇨🇦 加拿大 (Canada) 61 - hx
+  - 🇨🇦 加拿大 (Canada) 62 - hx
+  - 🇨🇦 加拿大 (Canada) 63 - hx
+  - 🇨🇦 加拿大 (Canada) 64 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -394,5 +819,35 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 32 - hx
   - 🇨🇦 加拿大 (Canada) 33 - hx
   - 🇨🇦 加拿大 (Canada) 34 - hx
+  - 🇨🇦 加拿大 (Canada) 35 - hx
+  - 🇨🇦 加拿大 (Canada) 36 - hx
+  - 🇨🇦 加拿大 (Canada) 37 - hx
+  - 🇨🇦 加拿大 (Canada) 38 - hx
+  - 🇨🇦 加拿大 (Canada) 39 - hx
+  - 🇨🇦 加拿大 (Canada) 40 - hx
+  - 🇨🇦 加拿大 (Canada) 41 - hx
+  - 🇨🇦 加拿大 (Canada) 42 - hx
+  - 🇨🇦 加拿大 (Canada) 43 - hx
+  - 🇨🇦 加拿大 (Canada) 44 - hx
+  - 🇨🇦 加拿大 (Canada) 45 - hx
+  - 🇨🇦 加拿大 (Canada) 46 - hx
+  - 🇨🇦 加拿大 (Canada) 47 - hx
+  - 🇨🇦 加拿大 (Canada) 48 - hx
+  - 🇨🇦 加拿大 (Canada) 49 - hx
+  - 🇨🇦 加拿大 (Canada) 50 - hx
+  - 🇨🇦 加拿大 (Canada) 51 - hx
+  - 🇨🇦 加拿大 (Canada) 52 - hx
+  - 🇨🇦 加拿大 (Canada) 53 - hx
+  - 🇨🇦 加拿大 (Canada) 54 - hx
+  - 🇨🇦 加拿大 (Canada) 55 - hx
+  - 🇨🇦 加拿大 (Canada) 56 - hx
+  - 🇨🇦 加拿大 (Canada) 57 - hx
+  - 🇨🇦 加拿大 (Canada) 58 - hx
+  - 🇨🇦 加拿大 (Canada) 59 - hx
+  - 🇨🇦 加拿大 (Canada) 60 - hx
+  - 🇨🇦 加拿大 (Canada) 61 - hx
+  - 🇨🇦 加拿大 (Canada) 62 - hx
+  - 🇨🇦 加拿大 (Canada) 63 - hx
+  - 🇨🇦 加拿大 (Canada) 64 - hx
 rules:
 - MATCH,PROXIES

@@ -1,0 +1,198 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇭 PH 01 - hx
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇵🇭 PH 02 - hx
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇵🇭 PH 03 - hx
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.golnamakcert.top
+- name: 🇵🇭 PH 04 - hx
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇵🇭 PH 05 - hx
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇵🇭 PH 06 - hx
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.golnamakcert.top
+- name: 🇵🇭 PH 07 - hx
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇵🇭 PH 08 - hx
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.golnamakcert.top
+- name: 🇵🇭 PH 09 - hx
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇵🇭 PH 10 - hx
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇵🇭 PH 11 - hx
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.golnamakcert.top
+- name: 🇵🇭 PH 12 - hx
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇭 PH 01 - hx
+  - 🇵🇭 PH 02 - hx
+  - 🇵🇭 PH 03 - hx
+  - 🇵🇭 PH 04 - hx
+  - 🇵🇭 PH 05 - hx
+  - 🇵🇭 PH 06 - hx
+  - 🇵🇭 PH 07 - hx
+  - 🇵🇭 PH 08 - hx
+  - 🇵🇭 PH 09 - hx
+  - 🇵🇭 PH 10 - hx
+  - 🇵🇭 PH 11 - hx
+  - 🇵🇭 PH 12 - hx
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇭 PH 01 - hx
+  - 🇵🇭 PH 02 - hx
+  - 🇵🇭 PH 03 - hx
+  - 🇵🇭 PH 04 - hx
+  - 🇵🇭 PH 05 - hx
+  - 🇵🇭 PH 06 - hx
+  - 🇵🇭 PH 07 - hx
+  - 🇵🇭 PH 08 - hx
+  - 🇵🇭 PH 09 - hx
+  - 🇵🇭 PH 10 - hx
+  - 🇵🇭 PH 11 - hx
+  - 🇵🇭 PH 12 - hx
+rules:
+- MATCH,PROXIES
