@@ -13,44 +13,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - hx
-  type: vless
-  server: roxnsk.color-shop.ir
-  port: 8080
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 03 - hx
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 04 - hx
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - hx
   type: ss
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 06 - hx
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - hx
+- name: 🇷🇴 RO 03 - hx
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -66,10 +35,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - hx
   - 🇷🇴 RO 02 - hx
   - 🇷🇴 RO 03 - hx
-  - 🇷🇴 RO 04 - hx
-  - 🇷🇴 RO 05 - hx
-  - 🇷🇴 RO 06 - hx
-  - 🇷🇴 RO 07 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,9 +43,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - hx
   - 🇷🇴 RO 02 - hx
   - 🇷🇴 RO 03 - hx
-  - 🇷🇴 RO 04 - hx
-  - 🇷🇴 RO 05 - hx
-  - 🇷🇴 RO 06 - hx
-  - 🇷🇴 RO 07 - hx
 rules:
 - MATCH,PROXIES
