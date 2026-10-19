@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS 01 - hx"
+        "🇳🇴 NO 01 - hx",
+        "🇳🇴 NO 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS 01 - hx"
+        "🇳🇴 NO 01 - hx",
+        "🇳🇴 NO 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
