@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - hx
   type: vless
-  server: 104.18.26.90
+  server: 188.114.98.0
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -19,6 +19,20 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 02 - hx
+  type: vless
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 03 - hx
   type: vless
   server: 104.16.10.185
   port: 443
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - hx
   - 🇹🇭 TH 02 - hx
+  - 🇹🇭 TH 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - hx
   - 🇹🇭 TH 02 - hx
+  - 🇹🇭 TH 03 - hx
 rules:
 - MATCH,PROXIES
