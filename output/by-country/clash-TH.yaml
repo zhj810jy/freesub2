@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - hx
+- name: 🇹🇭 TH 01 - hx
   type: vless
-  server: tun.centeriran.shop
+  server: 188.114.98.0
   port: 443
-  uuid: 041b2265-0d0a-4290-9439-25b6a0e15b6e
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2sdfsxc.centeriran.shop
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: tun.centeriran.shop
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - hx
+  - 🇹🇭 TH 01 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - hx
+  - 🇹🇭 TH 01 - hx
 rules:
 - MATCH,PROXIES
