@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - hx"
+        "🇨🇾 CY 01 - hx",
+        "🇨🇾 CY 02 - hx",
+        "🇨🇾 CY 03 - hx",
+        "🇨🇾 CY 04 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - hx"
+        "🇨🇾 CY 01 - hx",
+        "🇨🇾 CY 02 - hx",
+        "🇨🇾 CY 03 - hx",
+        "🇨🇾 CY 04 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
