@@ -5,26 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hx
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  type: ss
+  server: 195.133.5.194
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - hx
+  type: ss
+  server: 195.133.5.194
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hx
+  type: ss
+  server: 176.32.33.153
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - hx
+  type: vless
+  server: 45.142.120.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - hx
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
-  udp: true
+      Host: vms.lifetime08.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +56,9 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
+  - 🇷🇺 俄罗斯 (Russia) 03 - hx
+  - 🇷🇺 俄罗斯 (Russia) 04 - hx
+  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +66,8 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hx
   - 🇷🇺 俄罗斯 (Russia) 02 - hx
+  - 🇷🇺 俄罗斯 (Russia) 03 - hx
+  - 🇷🇺 俄罗斯 (Russia) 04 - hx
+  - 🇷🇺 俄罗斯 (Russia) 05 - hx
 rules:
 - MATCH,PROXIES
