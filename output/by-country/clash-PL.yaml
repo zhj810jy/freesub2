@@ -6,41 +6,81 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - hx
   type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - hx
   type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - hx
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - hx
   type: vless
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 05 - hx
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - hx
+- name: 🇵🇱 PL 06 - hx
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: tr2.soft10.ir
+  port: 2053
+  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tr2.soft10.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr2.soft10.ir
+- name: 🇵🇱 PL 07 - hx
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 08 - hx
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 09 - hx
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -54,6 +94,10 @@ proxy-groups:
   - 🇵🇱 PL 03 - hx
   - 🇵🇱 PL 04 - hx
   - 🇵🇱 PL 05 - hx
+  - 🇵🇱 PL 06 - hx
+  - 🇵🇱 PL 07 - hx
+  - 🇵🇱 PL 08 - hx
+  - 🇵🇱 PL 09 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +108,9 @@ proxy-groups:
   - 🇵🇱 PL 03 - hx
   - 🇵🇱 PL 04 - hx
   - 🇵🇱 PL 05 - hx
+  - 🇵🇱 PL 06 - hx
+  - 🇵🇱 PL 07 - hx
+  - 🇵🇱 PL 08 - hx
+  - 🇵🇱 PL 09 - hx
 rules:
 - MATCH,PROXIES
