@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (家宽) - hx"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (家宽) - hx"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
