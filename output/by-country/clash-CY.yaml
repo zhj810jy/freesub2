@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - hx
+- name: 🇨🇾 CY 01 - hx
   type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  server: 171.22.119.74
+  port: 8447
+  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
   udp: true
   tls: false
   skip-cert-verify: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - hx
+  - 🇨🇾 CY 01 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - hx
+  - 🇨🇾 CY 01 - hx
 rules:
 - MATCH,PROXIES
