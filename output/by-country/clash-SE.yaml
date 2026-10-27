@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - hx
   type: vless
-  server: 193.188.21.253
+  server: 5.178.109.174
   port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,21 +16,20 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 193.188.21.253
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - hx
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 1450b9fa-aa7e-4ccd-b2a7-956aec6a1ec4
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: firefox.com
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: swedish.global.ssl.fastly.net.
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - hx
   type: vless
   server: 191.44.114.179
@@ -45,6 +44,32 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 SE 04 - hx
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 05 - hx
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +78,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - hx
   - 🇸🇪 SE 02 - hx
   - 🇸🇪 SE 03 - hx
+  - 🇸🇪 SE 04 - hx
+  - 🇸🇪 SE 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +88,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - hx
   - 🇸🇪 SE 02 - hx
   - 🇸🇪 SE 03 - hx
+  - 🇸🇪 SE 04 - hx
+  - 🇸🇪 SE 05 - hx
 rules:
 - MATCH,PROXIES
