@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - hx
-  type: vless
-  server: 154.218.15.250
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
-- name: 🇸🇨 SC 02 - hx
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 03 - hx
   type: vmess
   server: 156.239.224.107
   port: 57278
@@ -47,6 +19,21 @@ proxies:
     path: ''
     headers:
       Host: ''
+- name: 🇸🇨 SC 02 - hx
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - hx
   - 🇸🇨 SC 02 - hx
-  - 🇸🇨 SC 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +48,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - hx
   - 🇸🇨 SC 02 - hx
-  - 🇸🇨 SC 03 - hx
 rules:
 - MATCH,PROXIES
