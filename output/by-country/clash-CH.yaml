@@ -32,28 +32,13 @@ proxies:
   client-fingerprint: random
 - name: 🇨🇭 CH 04 - hx
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 CH 05 - hx
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: swz.proxyplankton.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +48,6 @@ proxy-groups:
   - 🇨🇭 CH 02 - hx
   - 🇨🇭 CH 03 - hx
   - 🇨🇭 CH 04 - hx
-  - 🇨🇭 CH 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +57,5 @@ proxy-groups:
   - 🇨🇭 CH 02 - hx
   - 🇨🇭 CH 03 - hx
   - 🇨🇭 CH 04 - hx
-  - 🇨🇭 CH 05 - hx
 rules:
 - MATCH,PROXIES
