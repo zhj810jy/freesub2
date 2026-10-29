@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - hx
@@ -29,19 +29,21 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - hx
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 206.1.101.85
+  port: 42654
+  uuid: 893845c5-8e4a-48d5-8a85-622f5b7ea950
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: 206.1.101.85
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 206.1.101.85
 - name: 🇹🇷 土耳其 (Turkey) 04 - hx
   type: vless
   server: 151.241.226.201
@@ -53,32 +55,8 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - hx
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - hx
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 07 - hx
   type: vless
   server: 155.103.71.142
   port: 443
@@ -89,9 +67,19 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 06 - hx
+  type: vmess
+  server: free.ertebatgoostar.ir
+  port: 443
+  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,7 +91,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - hx
   - 🇹🇷 土耳其 (Turkey) 05 - hx
   - 🇹🇷 土耳其 (Turkey) 06 - hx
-  - 🇹🇷 土耳其 (Turkey) 07 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -115,6 +102,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - hx
   - 🇹🇷 土耳其 (Turkey) 05 - hx
   - 🇹🇷 土耳其 (Turkey) 06 - hx
-  - 🇹🇷 土耳其 (Turkey) 07 - hx
 rules:
 - MATCH,PROXIES
