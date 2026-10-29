@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 GR 01 - hx"
+        "🇬🇷 GR 01 - hx",
+        "🇬🇷 GR 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 GR 01 - hx"
+        "🇬🇷 GR 01 - hx",
+        "🇬🇷 GR 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
