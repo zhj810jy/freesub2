@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - hx"
+        "🇵🇭 PH 01 - hx",
+        "🇵🇭 PH 02 - hx",
+        "🇵🇭 PH 03 - hx",
+        "🇵🇭 PH 04 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - hx"
+        "🇵🇭 PH 01 - hx",
+        "🇵🇭 PH 02 - hx",
+        "🇵🇭 PH 03 - hx",
+        "🇵🇭 PH 04 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
