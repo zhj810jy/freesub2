@@ -6,13 +6,31 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - hx
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 02 - hx
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 03 - hx
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 02 - hx
+- name: 🇵🇱 PL 04 - hx
   type: vless
   server: 155.117.5.208
   port: 20001
@@ -20,51 +38,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - hx
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - hx
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 05 - hx
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 06 - hx
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - hx
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 08 - hx
   type: vless
   server: 168.222.43.53
   port: 2052
@@ -72,7 +46,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 09 - hx
+- name: 🇵🇱 PL 06 - hx
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -80,6 +54,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 07 - hx
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 08 - hx
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 09 - hx
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 10 - hx
   type: vless
   server: site.teslamotor.site
@@ -88,6 +87,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 11 - hx
+  type: vless
+  server: 146.75.57.238
+  port: 443
+  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: polandboijji.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,6 +116,7 @@ proxy-groups:
   - 🇵🇱 PL 08 - hx
   - 🇵🇱 PL 09 - hx
   - 🇵🇱 PL 10 - hx
+  - 🇵🇱 PL 11 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,5 +132,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - hx
   - 🇵🇱 PL 09 - hx
   - 🇵🇱 PL 10 - hx
+  - 🇵🇱 PL 11 - hx
 rules:
 - MATCH,PROXIES
