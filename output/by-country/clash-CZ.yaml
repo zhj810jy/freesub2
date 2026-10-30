@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - hx
   type: vless
-  server: 188.114.98.0
+  server: 155.212.240.10
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -34,21 +34,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 03 - hx
   type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇨🇿 CZ 04 - hx
-  type: vless
-  server: 155.212.240.10
+  server: 188.114.98.0
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - hx
   - 🇨🇿 CZ 02 - hx
   - 🇨🇿 CZ 03 - hx
-  - 🇨🇿 CZ 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇨🇿 CZ 01 - hx
   - 🇨🇿 CZ 02 - hx
   - 🇨🇿 CZ 03 - hx
-  - 🇨🇿 CZ 04 - hx
 rules:
 - MATCH,PROXIES
