@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - hx
   type: vless
-  server: 170.114.45.6
+  server: 170.114.46.6
   port: 8080
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   udp: true
@@ -45,20 +45,7 @@ proxies:
       Host: free.nadun.store
 - name: 🇱🇰 LK 04 - hx
   type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Free.nadun.store
-- name: 🇱🇰 LK 05 - hx
-  type: vless
-  server: 170.114.46.6
+  server: 170.114.45.6
   port: 8080
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   udp: true
@@ -69,7 +56,7 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
-- name: 🇱🇰 LK 06 - hx
+- name: 🇱🇰 LK 05 - hx
   type: vless
   server: support.zoom.us
   port: 8080
@@ -92,7 +79,6 @@ proxy-groups:
   - 🇱🇰 LK 03 - hx
   - 🇱🇰 LK 04 - hx
   - 🇱🇰 LK 05 - hx
-  - 🇱🇰 LK 06 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,6 +89,5 @@ proxy-groups:
   - 🇱🇰 LK 03 - hx
   - 🇱🇰 LK 04 - hx
   - 🇱🇰 LK 05 - hx
-  - 🇱🇰 LK 06 - hx
 rules:
 - MATCH,PROXIES
