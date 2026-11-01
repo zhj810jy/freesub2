@@ -44,18 +44,18 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - hx
   type: vless
-  server: 146.75.59.186
+  server: 177.3.208.65
   port: 443
-  uuid: e3425eb4-e9be-4568-8740-529a031c9315
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: looabturkeyeoijji.global.ssl.fastly.net.
+      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
