@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hx
-  type: ss
-  server: 38.54.85.230
-  port: 8445
-  cipher: 2022-blake3-aes-128-gcm
-  password: +SpI6Aj5R5Tex6qKfWF3Zw==
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
-  type: vless
-  server: 172.67.149.199
-  port: 443
-  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: px2.5ibtc.cn
-  network: ws
-  ws-opts:
-    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
-    headers:
-      Host: px2.5ibtc.cn
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
   type: vmess
   server: 47.244.120.197
   port: 44867
@@ -40,7 +19,45 @@ proxies:
     path: /arki
     headers:
       Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - hx
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hx
+  type: vmess
+  server: 47.243.167.44
+  port: 443
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rhHiErkwRf6fHs2H.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rhHiErkwRf6fHs2H.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - hx
+  type: ss
+  server: 38.54.85.230
+  port: 8445
+  cipher: 2022-blake3-aes-128-gcm
+  password: +SpI6Aj5R5Tex6qKfWF3Zw==
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -55,7 +72,23 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - hx
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - hx
+  type: vmess
+  server: 47.243.65.243
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - hx
   type: vless
   server: 152.175.6.229
   port: 31884
@@ -74,6 +107,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - hx
   - 🇭🇰 中国香港 (Hong Kong) 04 - hx
   - 🇭🇰 中国香港 (Hong Kong) 05 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 06 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 07 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +119,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - hx
   - 🇭🇰 中国香港 (Hong Kong) 04 - hx
   - 🇭🇰 中国香港 (Hong Kong) 05 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 06 - hx
+  - 🇭🇰 中国香港 (Hong Kong) 07 - hx
 rules:
 - MATCH,PROXIES
