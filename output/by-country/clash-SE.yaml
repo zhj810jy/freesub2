@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - hx
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 02 - hx
-  type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 194.104.94.141
-- name: 🇸🇪 SE 03 - hx
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -33,9 +17,46 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 02 - hx
+  type: vless
+  server: se-sto.862400.xyz
+  port: 443
+  uuid: ea81763f-e534-4700-aa28-9ac98156771b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048fp=random
+    headers:
+      Host: se-sto.862400.xyz
+- name: 🇸🇪 SE 03 - hx
+  type: vless
+  server: se-sto.862400.xyz
+  port: 443
+  uuid: ea81763f-e534-4700-aa28-9ac98156771b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
 - name: 🇸🇪 SE 04 - hx
   type: vless
   server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 05 - hx
+  type: vless
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -51,6 +72,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - hx
   - 🇸🇪 SE 03 - hx
   - 🇸🇪 SE 04 - hx
+  - 🇸🇪 SE 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +82,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - hx
   - 🇸🇪 SE 03 - hx
   - 🇸🇪 SE 04 - hx
+  - 🇸🇪 SE 05 - hx
 rules:
 - MATCH,PROXIES
