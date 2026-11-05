@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - hx
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 02 - hx
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - hx
   type: vless
   server: 104.21.6.186
   port: 443
@@ -48,9 +18,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 04 - hx
+- name: 🌐 其他地区 (Other) 02 - hx
   type: vless
-  server: 104.16.111.195
+  server: 104.18.13.229
+  port: 8443
+  uuid: 1753c03f-39c4-4bf2-ae83-38e90c847e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ydyg0908.mynameiszt.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ydyg0908.mynameiszt.eu.org
+- name: 🌐 其他地区 (Other) 03 - hx
+  type: vless
+  server: 104.16.10.22
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -62,9 +46,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 04 - hx
+  type: vless
+  server: 190.93.244.166
+  port: 2096
+  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wQa3mioJJR8fYoZhIui--su3-UCG1GDx.pages.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
+    headers:
+      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
 - name: 🌐 其他地区 (Other) 05 - hx
   type: vless
-  server: 162.159.254.3
+  server: 104.16.10.135
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -78,7 +76,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 06 - hx
   type: vless
-  server: 104.16.10.234
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -92,7 +90,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 07 - hx
   type: vless
-  server: 104.18.42.98
+  server: 104.17.50.53
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -106,7 +104,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 08 - hx
   type: vless
-  server: 104.18.42.98
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -120,7 +118,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 09 - hx
   type: vless
-  server: 104.16.0.1
+  server: 104.16.10.234
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -134,7 +132,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 10 - hx
   type: vless
-  server: 104.16.10.56
+  server: 104.16.10.185
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -148,7 +146,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 11 - hx
   type: vless
-  server: 104.21.219.160
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -162,7 +160,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 12 - hx
   type: vless
-  server: 188.114.97.6
+  server: www.speedtest.net
+  port: 443
+  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb4.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: wallweb4.pages.dev
+- name: 🌐 其他地区 (Other) 13 - hx
+  type: vless
+  server: 104.18.42.98
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -174,9 +186,51 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 13 - hx
+- name: 🌐 其他地区 (Other) 14 - hx
   type: vless
-  server: 104.27.46.35
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 15 - hx
+  type: vless
+  server: 104.16.222.106
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-cacd03f0143e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: yazxg0egut9s.ezaccess113f260.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/cacd03f0143e
+    headers:
+      Host: yazxg0egut9s.ezaccess113f260.workers.dev
+- name: 🌐 其他地区 (Other) 16 - hx
+  type: vless
+  server: 104.18.12.229
+  port: 8443
+  uuid: 1753c03f-39c4-4bf2-ae83-38e90c847e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ydyg0908.mynameiszt.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ydyg0908.mynameiszt.eu.org
+- name: 🌐 其他地区 (Other) 17 - hx
+  type: vless
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -206,6 +260,10 @@ proxy-groups:
   - 🌐 其他地区 (Other) 11 - hx
   - 🌐 其他地区 (Other) 12 - hx
   - 🌐 其他地区 (Other) 13 - hx
+  - 🌐 其他地区 (Other) 14 - hx
+  - 🌐 其他地区 (Other) 15 - hx
+  - 🌐 其他地区 (Other) 16 - hx
+  - 🌐 其他地区 (Other) 17 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -224,5 +282,9 @@ proxy-groups:
   - 🌐 其他地区 (Other) 11 - hx
   - 🌐 其他地区 (Other) 12 - hx
   - 🌐 其他地区 (Other) 13 - hx
+  - 🌐 其他地区 (Other) 14 - hx
+  - 🌐 其他地区 (Other) 15 - hx
+  - 🌐 其他地区 (Other) 16 - hx
+  - 🌐 其他地区 (Other) 17 - hx
 rules:
 - MATCH,PROXIES
