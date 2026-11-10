@@ -13,28 +13,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: germany3.banovano.space
-- name: 🇱🇹 LT 02 - hx
-  type: vless
-  server: germany3.banovano.space
-  port: 2053
-  uuid: 53555197-bf0a-49e6-bea1-211fcfc1d962
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: germany3.banovano.space
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - hx
-  - 🇱🇹 LT 02 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - hx
-  - 🇱🇹 LT 02 - hx
 rules:
 - MATCH,PROXIES
