@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - hx
+- name: 🇱🇰 LK 01 - hx
   type: vless
-  server: 191.44.112.170
-  port: 443
-  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  server: 170.114.46.6
+  port: 2096
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: orbylume.my.to
+  servername: pcloud.z-tas.com
   network: ws
   ws-opts:
-    path: /tvpn-tor/is
+    path: /
     headers:
-      Host: orbylume.my.to
+      Host: pcloud.z-tas.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - hx
+  - 🇱🇰 LK 01 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - hx
+  - 🇱🇰 LK 01 - hx
 rules:
 - MATCH,PROXIES
