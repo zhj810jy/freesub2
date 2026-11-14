@@ -6,13 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hx
   type: vless
-  server: 94.182.136.173
-  port: 443
-  uuid: ed8dda30-5751-4655-acca-4a4066c46e41
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ns2.irts.lol
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - hx
   type: vless
   server: 45.144.234.157
@@ -39,19 +43,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - hx
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +51,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - hx
   - 🇫🇮 FI 02 - hx
   - 🇫🇮 FI 03 - hx
-  - 🇫🇮 FI 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +59,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - hx
   - 🇫🇮 FI 02 - hx
   - 🇫🇮 FI 03 - hx
-  - 🇫🇮 FI 04 - hx
 rules:
 - MATCH,PROXIES
