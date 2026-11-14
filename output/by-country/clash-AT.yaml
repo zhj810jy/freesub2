@@ -40,13 +40,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇦🇹 AT 05 - hx
-  type: ss
-  server: 152.53.1.57
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,7 +49,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - hx
   - 🇦🇹 AT 03 - hx
   - 🇦🇹 AT 04 - hx
-  - 🇦🇹 AT 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,6 +58,5 @@ proxy-groups:
   - 🇦🇹 AT 02 - hx
   - 🇦🇹 AT 03 - hx
   - 🇦🇹 AT 04 - hx
-  - 🇦🇹 AT 05 - hx
 rules:
 - MATCH,PROXIES
