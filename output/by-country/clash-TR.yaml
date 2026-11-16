@@ -20,6 +20,15 @@ proxies:
       Host: 185.39.204.117
 - name: 🇹🇷 土耳其 (Turkey) 02 - hx
   type: vless
+  server: 188.132.174.69
+  port: 12830
+  uuid: 10af09cf-dc4c-4c08-b524-10e7ef4667d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fpnshoping.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - hx
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -30,7 +39,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - hx
+- name: 🇹🇷 土耳其 (Turkey) 04 - hx
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -50,6 +59,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - hx
   - 🇹🇷 土耳其 (Turkey) 02 - hx
   - 🇹🇷 土耳其 (Turkey) 03 - hx
+  - 🇹🇷 土耳其 (Turkey) 04 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +68,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - hx
   - 🇹🇷 土耳其 (Turkey) 02 - hx
   - 🇹🇷 土耳其 (Turkey) 03 - hx
+  - 🇹🇷 土耳其 (Turkey) 04 - hx
 rules:
 - MATCH,PROXIES
