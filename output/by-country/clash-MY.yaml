@@ -4,26 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - hx
+- name: 🇲🇾 MY 01 - hx
   type: vless
-  server: 194.60.228.97
+  server: 382218.xyz
   port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
+  servername: 382218.xyz
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 382218.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - hx
+  - 🇲🇾 MY 01 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - hx
+  - 🇲🇾 MY 01 - hx
 rules:
 - MATCH,PROXIES
