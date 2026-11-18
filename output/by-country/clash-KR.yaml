@@ -82,6 +82,13 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 07 - hx
+  type: ss
+  server: 115.161.136.145
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +100,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - hx
   - 🇰🇷 韩国 (South Korea) 05 - hx
   - 🇰🇷 韩国 (South Korea) 06 - hx
+  - 🇰🇷 韩国 (South Korea) 07 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +112,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - hx
   - 🇰🇷 韩国 (South Korea) 05 - hx
   - 🇰🇷 韩国 (South Korea) 06 - hx
+  - 🇰🇷 韩国 (South Korea) 07 - hx
 rules:
 - MATCH,PROXIES
