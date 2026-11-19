@@ -16,21 +16,19 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 02 - hx
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
+  servername: None
 - name: 🇫🇷 法国 (France) 03 - hx
   type: vmess
-  server: 46.105.222.155
+  server: 79.137.99.183
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -40,31 +38,6 @@ proxies:
   skip-cert-verify: true
   servername: None
 - name: 🇫🇷 法国 (France) 04 - hx
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 05 - hx
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 06 - hx
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - hx
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -79,56 +52,28 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 08 - hx
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇫🇷 法国 (France) 05 - hx
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 09 - hx
+- name: 🇫🇷 法国 (France) 06 - hx
   type: ss
   server: 172.99.189.142
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 10 - hx
-  type: vless
-  server: suh.cryptofront.uk
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 11 - hx
+- name: 🇫🇷 法国 (France) 07 - hx
   type: ss
-  server: 167.17.64.22
+  server: 167.17.64.175
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 12 - hx
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 13 - hx
+- name: 🇫🇷 法国 (France) 08 - hx
   type: vless
   server: ov-france1.09vpn.com
   port: 80
@@ -141,9 +86,62 @@ proxies:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 14 - hx
+- name: 🇫🇷 法国 (France) 09 - hx
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 10 - hx
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 11 - hx
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 12 - hx
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 13 - hx
   type: vmess
   server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 14 - hx
+  type: vmess
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -154,17 +152,6 @@ proxies:
   servername: ''
 - name: 🇫🇷 法国 (France) 15 - hx
   type: vmess
-  server: 91.134.35.72
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 16 - hx
-  type: vmess
   server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
@@ -174,35 +161,22 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 16 - hx
+  type: vless
+  server: suh.cryptofront.uk
+  port: 80
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: suh.cryptofront.uk
 - name: 🇫🇷 法国 (France) 17 - hx
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 18 - hx
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 19 - hx
   type: vmess
-  server: 79.137.99.183
+  server: 46.105.222.157
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -210,27 +184,68 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: None
-- name: 🇫🇷 法国 (France) 20 - hx
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  servername: xmfhlpy.com
+- name: 🇫🇷 法国 (France) 18 - hx
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 19 - hx
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 20 - hx
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 21 - hx
   type: ss
-  server: 167.17.64.27
+  server: 167.17.64.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 22 - hx
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 23 - hx
   type: ss
-  server: 107.161.160.28
-  port: 8388
+  server: 23.162.152.22
+  port: 19999
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -259,6 +274,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 20 - hx
   - 🇫🇷 法国 (France) 21 - hx
   - 🇫🇷 法国 (France) 22 - hx
+  - 🇫🇷 法国 (France) 23 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -286,5 +302,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 20 - hx
   - 🇫🇷 法国 (France) 21 - hx
   - 🇫🇷 法国 (France) 22 - hx
+  - 🇫🇷 法国 (France) 23 - hx
 rules:
 - MATCH,PROXIES

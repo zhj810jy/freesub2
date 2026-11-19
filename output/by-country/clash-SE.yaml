@@ -17,17 +17,16 @@ proxies:
   servername: xmfhlpy.com
 - name: 🇸🇪 SE 02 - hx
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 03 - hx
   type: ss
   server: 138.199.55.243
@@ -49,44 +48,17 @@ proxies:
   client-fingerprint: firefox
 - name: 🇸🇪 SE 05 - hx
   type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 06 - hx
-  type: vless
-  server: subgift.gcorecdn.com
-  port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: subgift.gcorecdn.com
   network: ws
   ws-opts:
-    path: /t.me-SubGift
+    path: /vless
     headers:
-      Host: subgift.gcorecdn.com
-- name: 🇸🇪 SE 07 - hx
-  type: vless
-  server: 92.223.84.254
-  port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: subgift.gcorecdn.com
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,8 +69,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - hx
   - 🇸🇪 SE 04 - hx
   - 🇸🇪 SE 05 - hx
-  - 🇸🇪 SE 06 - hx
-  - 🇸🇪 SE 07 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,7 +79,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - hx
   - 🇸🇪 SE 04 - hx
   - 🇸🇪 SE 05 - hx
-  - 🇸🇪 SE 06 - hx
-  - 🇸🇪 SE 07 - hx
 rules:
 - MATCH,PROXIES
