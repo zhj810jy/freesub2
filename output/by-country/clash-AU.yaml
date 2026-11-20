@@ -15,7 +15,21 @@ proxies:
   servername: portland-wins-robbie-skirt.trycloudflare.com
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- name: 🇦🇺 澳大利亚 (Australia) 02 - hx
+  type: vless
+  server: 104.18.10.153
+  port: 443
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - hx
+  - 🇦🇺 澳大利亚 (Australia) 02 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - hx
+  - 🇦🇺 澳大利亚 (Australia) 02 - hx
 rules:
 - MATCH,PROXIES
