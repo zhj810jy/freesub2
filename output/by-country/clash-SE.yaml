@@ -28,13 +28,6 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 03 - hx
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 04 - hx
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -47,17 +40,13 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - hx
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 SE 04 - hx
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +56,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - hx
   - 🇸🇪 SE 03 - hx
   - 🇸🇪 SE 04 - hx
-  - 🇸🇪 SE 05 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +65,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - hx
   - 🇸🇪 SE 03 - hx
   - 🇸🇪 SE 04 - hx
-  - 🇸🇪 SE 05 - hx
 rules:
 - MATCH,PROXIES
