@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - hx"
+        "🇩🇰 DK 01 - hx",
+        "🇩🇰 DK 02 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - hx"
+        "🇩🇰 DK 01 - hx",
+        "🇩🇰 DK 02 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
