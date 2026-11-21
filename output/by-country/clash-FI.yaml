@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hx
   type: vless
-  server: 104.17.145.145
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
-- name: 🇫🇮 FI 02 - hx
-  type: vless
-  server: 172.67.67.89
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
-- name: 🇫🇮 FI 03 - hx
-  type: vless
   server: 198.202.24.142
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
@@ -52,15 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - hx
-  - 🇫🇮 FI 02 - hx
-  - 🇫🇮 FI 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - hx
-  - 🇫🇮 FI 02 - hx
-  - 🇫🇮 FI 03 - hx
 rules:
 - MATCH,PROXIES
