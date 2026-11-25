@@ -15,51 +15,55 @@ proxies:
   servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hx
   type: vless
+  server: 188.68.216.33
+  port: 443
+  uuid: 08ef7604-b3a5-0001-b264-0038fa7c44fc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pmdhivnevikmltdhqp.fcloudservices.site
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
+  type: vless
   server: 136.148.83.69
   port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hx
-  type: vless
-  server: 72.56.238.135
-  port: 443
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parchment.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de7/stream
-    headers:
-      Host: parchment.merlano.monster
 - name: 🇷🇺 俄罗斯 (Russia) 04 - hx
   type: vless
-  server: 136.148.83.70
+  server: 185.151.241.22
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
+  servername: mrhytymqyorzvzgwoh.fcloudservices.site
 - name: 🇷🇺 俄罗斯 (Russia) 05 - hx
   type: vless
-  server: 72.56.238.135
-  port: 443
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  server: 172.64.145.202
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: inlay.merlano.monster
+  servername: newwk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /api/de3/stream
+    path: /
     headers:
-      Host: inlay.merlano.monster
+      Host: newwk1.f1w.de5.net
 - name: 🇷🇺 俄罗斯 (Russia) 06 - hx
+  type: vless
+  server: 188.68.216.33
+  port: 443
+  uuid: f139c8e2-d5f6-0001-bf9e-1601f0c40a6f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pmdhivnevikmltdhqp.fcloudservices.site
+- name: 🇷🇺 俄罗斯 (Russia) 07 - hx
   type: vless
   server: 147.45.175.81
   port: 443
@@ -73,11 +77,41 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 07 - hx
+- name: 🇷🇺 俄罗斯 (Russia) 08 - hx
+  type: vless
+  server: 147.45.221.225
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
+- name: 🇷🇺 俄罗斯 (Russia) 09 - hx
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - hx
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 11 - hx
   type: vless
   server: 136.148.83.69
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
   tls: true
   skip-cert-verify: true
@@ -94,6 +128,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - hx
   - 🇷🇺 俄罗斯 (Russia) 06 - hx
   - 🇷🇺 俄罗斯 (Russia) 07 - hx
+  - 🇷🇺 俄罗斯 (Russia) 08 - hx
+  - 🇷🇺 俄罗斯 (Russia) 09 - hx
+  - 🇷🇺 俄罗斯 (Russia) 10 - hx
+  - 🇷🇺 俄罗斯 (Russia) 11 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,5 +144,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - hx
   - 🇷🇺 俄罗斯 (Russia) 06 - hx
   - 🇷🇺 俄罗斯 (Russia) 07 - hx
+  - 🇷🇺 俄罗斯 (Russia) 08 - hx
+  - 🇷🇺 俄罗斯 (Russia) 09 - hx
+  - 🇷🇺 俄罗斯 (Russia) 10 - hx
+  - 🇷🇺 俄罗斯 (Russia) 11 - hx
 rules:
 - MATCH,PROXIES
