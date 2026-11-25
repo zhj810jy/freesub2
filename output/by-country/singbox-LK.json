@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - hx"
+        "🇱🇰 LK 01 - hx",
+        "🇱🇰 LK 02 - hx",
+        "🇱🇰 LK 03 - hx",
+        "🇱🇰 LK 04 - hx",
+        "🇱🇰 LK 05 - hx"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - hx"
+        "🇱🇰 LK 01 - hx",
+        "🇱🇰 LK 02 - hx",
+        "🇱🇰 LK 03 - hx",
+        "🇱🇰 LK 04 - hx",
+        "🇱🇰 LK 05 - hx"
       ],
       "url": "https://www.google.com/generate_204"
     },
