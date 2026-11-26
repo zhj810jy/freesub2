@@ -15,20 +15,6 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - hx
   type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sinavm3.soft10.ir
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - hx
-  type: vless
   server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
@@ -43,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - hx
   - 🇹🇷 土耳其 (Turkey) 02 - hx
-  - 🇹🇷 土耳其 (Turkey) 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - hx
   - 🇹🇷 土耳其 (Turkey) 02 - hx
-  - 🇹🇷 土耳其 (Turkey) 03 - hx
 rules:
 - MATCH,PROXIES
