@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - hx
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
-- name: 🇰🇿 KZ 02 - hx
   type: vless
   server: 38.107.234.57
   port: 8443
@@ -33,7 +18,7 @@ proxies:
     path: /vless/
     headers:
       Host: 38.107.234.57
-- name: 🇰🇿 KZ 03 - hx
+- name: 🇰🇿 KZ 02 - hx
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -55,7 +40,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 KZ 01 - hx
   - 🇰🇿 KZ 02 - hx
-  - 🇰🇿 KZ 03 - hx
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +47,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 KZ 01 - hx
   - 🇰🇿 KZ 02 - hx
-  - 🇰🇿 KZ 03 - hx
 rules:
 - MATCH,PROXIES
